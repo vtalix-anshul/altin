@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import newLogo from "../../assets/images/Logo.png";
+import GetAQuote from "./GetAQuote";
 
 const NavMenu = () => {
   const links = [
@@ -9,15 +10,15 @@ const NavMenu = () => {
   ];
 
   return (
-    <nav aria-label="Global" className="md:mx-auto flex w-full items-center justify-between py-6 px-6 lg:px-8  gap-4">
-      <div className="flex justify-start lg:flex-1 ">
+    <nav aria-label="Global" className="mx-0 md:mx-auto flex w-fit md:w-full items-center justify-between py-6 px-6 lg:px-8  gap-4 z-50">
+      <div className="flex justify-start lg:flex-1">
         <Link to="/" className="-m-1.5 p-1.5">
           <span className="sr-only">Altin</span>
-          <img src={newLogo} alt="Logo" className="h-8 w-auto" />
+          <img src={newLogo} alt="Logo" className="h-12 w-auto" />
         </Link>
       </div>
 
-      <div className="hidden lg:flex gap-x-9 items-center">
+      <div className="hidden md:flex gap-x-9 items-center">
         {links.map(({ to, label }) => (
           <Link
             key={to}
@@ -27,9 +28,7 @@ const NavMenu = () => {
             {label}
           </Link>
         ))}
-        <div className="block text-lg text-white">
-          <button className="btn bg-orange">Get a Quote</button>
-      </div>
+        <GetAQuote />
       </div>
     </nav>
   );

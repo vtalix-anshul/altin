@@ -2,6 +2,7 @@ import { useState } from 'react';
 import SideMenu from './sub-components/SideMenu';
 import NavMenu from './sub-components/NavMenu';
 import { Bars3Icon } from '@heroicons/react/24/outline';
+import GetAQuote from './sub-components/GetAQuote';
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
@@ -9,11 +10,11 @@ const Header = () => {
   // Function to check if the current path is active
 
   return (
-    <header className="bg-transparent">
+    <header className="bg-transparent z-50">
       {/* Pass isActive function to NavMenu */}
-      <div className='flex justify-between items-center'>
+      <div className='flex justify-between items-center z-50'>
         <NavMenu />
-        <div className="flex xl:hidden lg:hidden mr-2.5">
+        <div className="flex md:hidden pr-2.5 min-w-28 w-full justify-end items-center z-50">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -22,7 +23,9 @@ const Header = () => {
             <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
+          <GetAQuote />
         </div>
+
         <SideMenu mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen}/>
       </div>
     </header>

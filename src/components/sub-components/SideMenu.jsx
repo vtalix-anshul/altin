@@ -2,6 +2,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import newLogo from "../../assets/images/Logo.png";
+import GetAQuote from "./GetAQuote";
 
 const SideMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {   
     const links = [
@@ -14,7 +15,7 @@ const SideMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
         <div className="fixed inset-0 z-100 bg-gray-500 opacity-75 transition-all duration-300" />
         <DialogPanel className="fixed inset-y-0 right-0 z-20 w-[100%] sm:w-64 bg-white p-6 px-4 pt-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between mb-6">
-            <Link to="/" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5 bg-black">
                 <img src={newLogo} alt="Logo" className="h-8 w-auto" />
             </Link>
             <button
@@ -36,9 +37,7 @@ const SideMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                 <Link to="/contact-us" className="text-gray-900 block text-lg">
                     Contact Us
                 </Link>
-                <div className="block text-lg text-white">
-                    <button className="btn bg-orange">Get a Quote</button>
-                </div>
+                <GetAQuote />
             </nav>
         </DialogPanel>
         </Dialog>

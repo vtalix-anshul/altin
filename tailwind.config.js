@@ -11,6 +11,8 @@ export default {
         lightOrange: "#FDEDE9",
         lightGray: "#F5F5F5",
         darkGray: "#AEAEAE",
+        black2: "#040505CC"
+
       },
     },
   },
