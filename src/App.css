@@ -4,3 +4,20 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.collections__banner__1,
+.collections__banner__2,
+.collections__banner__3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collections__banner__1{
+    background-image: url("./assets/images/altin__exports__panel__1.png");
+}
+.collections__banner__2{
+    background-image: url("./assets/images/altin__exports__panel__2.png");
+}
+.collections__banner__3{
+    background-image: url("./assets/images/altin__exports__panel__3.png");
+}
