@@ -1,7 +1,9 @@
 import AltinExports from "../components/HomeComponents/AltinExports";
+import BlogComponents from "../components/HomeComponents/BlogComponents";
 import Collections from "../components/HomeComponents/Collections";
 import HomeBanner from "../components/HomeComponents/HomeBanner";
 import HowWeWork from "../components/HomeComponents/HowWeWork";
+import ProjectTalk from "../components/HomeComponents/ProjectTalk";
 
 const Home = ()=>{
     return (<>
@@ -10,6 +12,8 @@ const Home = ()=>{
             <AltinExports />
             <Collections />
             <HowWeWork />
+            <ProjectTalk />
+            <BlogComponents />
         </main>
     </>);
 }

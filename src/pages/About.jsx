@@ -1,3 +1,4 @@
+import GlobalMaps from "../components/AboutComponents/GlobalMaps";
 import HomeBanner from "../components/AboutComponents/HomeBanner";
 import OurValues from "../components/AboutComponents/OurValues";
 
@@ -7,6 +8,7 @@ const About = ()=>{
             <HomeBanner />
             {/* one component is missing */}
             <OurValues />
+            <GlobalMaps />
         </main>
     </>);
 }

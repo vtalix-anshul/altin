@@ -24,7 +24,7 @@ const HomeBanner = ()=>{
                     <div className="contact__heading px-4 h-full flex flex-col justify-between">
                         <div className="contact__heading__child flex flex-col gap-3">
                             <h3 className="text-3xl lg:text-5xl font-semibold">Let&apos;s work together</h3>
-                            <a href="mailto=info@altinexports.com" className="text-orange">info@altinexports.com</a>
+                            <a href="mailto:info@altinexports.com" className="text-orange w-fit">info@altinexports.com</a>
                         </div>
                         <div className="aline__info w-1/2 flex flex-col justify-between gap-6">
                         <p>+91 84888 39925</p>

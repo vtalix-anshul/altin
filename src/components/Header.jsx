@@ -1,18 +1,26 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import SideMenu from './sub-components/SideMenu';
 import NavMenu from './sub-components/NavMenu';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import GetAQuote from './sub-components/GetAQuote';
+import { useLocation } from 'react-router-dom';
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+    window.scrollTo(0,0);
+  }, [location]);
   
 
   // Function to check if the current path is active
 
   return (
-    <header className="bg-transparent z-50">
+    <header className="bg-red-900 z-50">
       {/* Pass isActive function to NavMenu */}
-      <div className='flex justify-between items-center z-50'>
+      <div className='flex justify-between items-center z-50 bg-red-900'>
         <NavMenu />
         <div className="flex md:hidden pr-2.5 min-w-28 w-full justify-end items-center z-50">
           <button

@@ -13,7 +13,7 @@ const SideMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
     return (
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-100 bg-gray-500 opacity-75 transition-all duration-300" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-20 w-[100%] sm:w-64 bg-white p-6 px-4 pt-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-[999] w-[100%] sm:w-64 bg-white p-6 px-4 pt-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between mb-6">
             <Link to="/" className="-m-1.5 p-1.5 bg-black">
                 <img src={newLogo} alt="Logo" className="h-8 w-auto" />
