@@ -16,14 +16,14 @@ const GlobalMaps = ()=>{
                     <div className="right__div w-full md:px-2 lg:px-16">
                         <div className="reach__partners__card__parent flex flex-col sm:flex-row gap-4 md:gap-8 lg:gap-16 py-8 md:py-0">
                             <div className="reach__partners__card flex flex-col gap-6">
-                                <div className=""><div className="button__div rounded-full bg-orange w-16 h-16 grid place-items-center">03</div></div>
+                                <div className=""><div className="button__div rounded-full bg-orange text-white w-16 h-16 grid place-items-center">03</div></div>
                                 <div className="card__content flex flex-col gap-2">
                                     <h3 className="text-2xl">Continents</h3>
                                     <p className="text-darkGray text-sm">Proudly exporting premium products to 3 continents, ensuring global reach and quality.</p>
                                 </div>
                             </div>
                             <div className="reach__partners__card flex flex-col gap-6">
-                                <div className=""><div className="button__div rounded-full bg-orange w-16 h-16 grid place-items-center">20</div></div>
+                                <div className=""><div className="button__div rounded-full bg-orange text-white w-16 h-16 grid place-items-center">20</div></div>
                                 <div className="card__content flex flex-col gap-2">
                                     <h3 className="text-2xl">Countries</h3>
                                     <p className="text-darkGray text-sm">Delivering excellence to over 20 countries across the globe.</p>

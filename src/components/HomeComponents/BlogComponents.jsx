@@ -28,7 +28,7 @@ const BlogComponents = ()=>{
                     </div>
                     <div className="blog__card bg-white w-full max-w-[420px] rounded-3xl p-3 flex flex-col gap-6">
                         <div className="blog__card__image w-full">
-                            <img src={first__blog} alt="" className="rounded-2xl object-cover" />
+                            <img src={second__blog} alt="" className="rounded-2xl object-cover" />
                         </div>
                         <div className="blog__card__content flex flex-col p-2 md:p-4 lg:p-8 gap-6">
                             <div className="blog__content w-full">
@@ -40,7 +40,7 @@ const BlogComponents = ()=>{
                     </div>
                     <div className="blog__card bg-white w-full max-w-[420px] rounded-3xl p-3 flex flex-col gap-6">
                         <div className="blog__card__image w-full">
-                            <img src={first__blog} alt="" className="rounded-2xl object-cover" />
+                            <img src={third__blog} alt="" className="rounded-2xl object-cover" />
                         </div>
                         <div className="blog__card__content flex flex-col p-2 md:p-4 lg:p-8 gap-6">
                             <div className="blog__content w-full">

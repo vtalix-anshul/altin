@@ -28,3 +28,38 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.product__home__banner{
+    background-image:url("./assets/images/altin__exports__panel__3.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.collection__parent__1,
+.collection__parent__2,
+.collection__parent__3{
+    background-position: bottom;
+    transition: all ease-in-out 0.3s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.collection__parent__1:hover{
+    background-image:url("./assets/images/altin__exports__panel__1.png");
+}
+.collection__parent__2:hover{
+    background-image:url("./assets/images/altin__exports__panel__3.png");
+}
+.collection__parent__3:hover{
+    background-image:url("./assets/images/altin__exports__panel__2.png");
+}
+
+.product__small__home__banner{
+    background-image:url("./assets/images/altin__exports__panel__1.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -36,7 +36,7 @@ const Collections = ()=>{
                                     </div>
                                 </div>
                             </div>
-                            <Link to="/" className="text-lg">Know More</Link>
+                            <Link to="/tiles" className="text-lg">Know More</Link>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ const Collections = ()=>{
                                     </div>
                                 </div>
                             </div>
-                            <Link to="/" className="text-lg">Know More</Link>
+                            <Link to="/sanitary" className="text-lg">Know More</Link>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ const Collections = ()=>{
                                     </div>
                                 </div>
                             </div>
-                            <Link to="/" className="text-lg">Know More</Link>
+                            <Link to="/bath-fittings" className="text-lg">Know More</Link>
                         </div>
                     </div>
                 </div>
