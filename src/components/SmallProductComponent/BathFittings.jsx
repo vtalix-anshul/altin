@@ -5,6 +5,7 @@ import altin__exports__panel__1 from "../../assets/images/altin__exports__panel_
 import altin__exports__panel__2 from "../../assets/images/altin__exports__panel__2.png"
 import altin__exports__panel__3 from "../../assets/images/altin__exports__panel__3.png"
 import altin__exports__panel__4 from "../../assets/images/altin__exports__panel__4.png"
+import DownloadButton from "../sub-components/DownloadButton";
 const BathFittings = ()=>{
     return(<>
         <div className="product__small__home__banner h-dvh -mt-24 relative grid items-center">
@@ -33,54 +34,67 @@ const BathFittings = ()=>{
                     <div className="py-12 flex flex-col gap-16">
 
                         <TabPanels>
-                            <TabPanel className="flex gap-6 flex-wrap justify-center">
-                                <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                    <div className="image__parent w-full">
-                                        <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
+                            <TabPanel className="flex gap-16 flex-col">
+                                <div className="flex flex-wrap justify-center gap-6">
+                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                        <div className="image__parent w-full">
+                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
+                                        </div>
+                                        <div className="card__content py-6 px-3">
+                                            <h3 className="text-2xl">Faucet</h3>
+                                        </div>
                                     </div>
-                                    <div className="card__content py-6 px-3">
-                                        <h3 className="text-2xl">Faucet</h3>
+                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                        <div className="image__parent w-full">
+                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
+                                        </div>
+                                        <div className="card__content py-6 px-3">
+                                            <h3 className="text-2xl">Faucet</h3>
+                                        </div>
+                                    </div>
+                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                        <div className="image__parent w-full">
+                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
+                                        </div>
+                                        <div className="card__content py-6 px-3">
+                                            <h3 className="text-2xl">Faucet</h3>
+                                        </div>
+                                    </div>
+                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                        <div className="image__parent w-full">
+                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
+                                        </div>
+                                        <div className="card__content py-6 px-3">
+                                            <h3 className="text-2xl">Faucet</h3>
+                                        </div>
+                                    </div>
+                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                        <div className="image__parent w-full">
+                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
+                                        </div>
+                                        <div className="card__content py-6 px-3">
+                                            <h3 className="text-2xl">Faucet</h3>
+                                        </div>
+                                    </div>
+                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                        <div className="image__parent w-full">
+                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
+                                        </div>
+                                        <div className="card__content py-6 px-3">
+                                            <h3 className="text-2xl">Faucet</h3>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                    <div className="image__parent w-full">
-                                        <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                    </div>
-                                    <div className="card__content py-6 px-3">
-                                        <h3 className="text-2xl">Faucet</h3>
-                                    </div>
-                                </div>
-                                <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                    <div className="image__parent w-full">
-                                        <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                    </div>
-                                    <div className="card__content py-6 px-3">
-                                        <h3 className="text-2xl">Faucet</h3>
-                                    </div>
-                                </div>
-                                <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                    <div className="image__parent w-full">
-                                        <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                    </div>
-                                    <div className="card__content py-6 px-3">
-                                        <h3 className="text-2xl">Faucet</h3>
-                                    </div>
-                                </div>
-                                <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                    <div className="image__parent w-full">
-                                        <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                    </div>
-                                    <div className="card__content py-6 px-3">
-                                        <h3 className="text-2xl">Faucet</h3>
-                                    </div>
-                                </div>
-                                <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                    <div className="image__parent w-full">
-                                        <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                    </div>
-                                    <div className="card__content py-6 px-3">
-                                        <h3 className="text-2xl">Faucet</h3>
-                                    </div>
+                                <div className="flex justify-center">
+                                    <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
+                                        <div className="img__parent">
+                                            <img src={book__image} alt="" className="w-[90%] mx-auto"/> 
+                                        </div>
+                                        <div className="button__parent text-center">
+                                            <p className="text-2xl">Faucet Catalogue</p>
+                                            <DownloadButton brochure={"Faucet Catalogue"} />
+                                        </div>
+                                    </div> 
                                 </div>
                             </TabPanel>
                             <TabPanel className="flex gap-16 flex-col">
@@ -141,7 +155,7 @@ const BathFittings = ()=>{
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Shower Catalogue</p>
-                                            <button className="mt-3 btn bg-orange text-white">Download</button>
+                                            <DownloadButton brochure={"Shower Catalogue"} />
                                         </div>
                                     </div> 
                                 </div>
@@ -205,63 +219,64 @@ const BathFittings = ()=>{
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Health Faucet Catalogue</p>
-                                            <button className="mt-3 btn bg-orange text-white">Download</button>
+                                            <DownloadButton brochure={"Health Faucet Catalogue"} />
                                         </div>
                                     </div> 
                                 </div>
                             </TabPanel>
                             <TabPanel className="flex gap-16 flex-col">
-                                <div className="flex flex-wrap justify-center gap-6">
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
+                                <div className="flex gap-6 flex-wrap justify-center">
+                                    <div className="flex flex-wrap justify-center gap-6">
+                                        <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                            <div className="image__parent w-full">
+                                                <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
+                                            </div>
+                                            <div className="card__content py-6 px-3">
+                                                <h3 className="text-2xl">Accessories</h3>
+                                            </div>
                                         </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
+                                        <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                            <div className="image__parent w-full">
+                                                <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
+                                            </div>
+                                            <div className="card__content py-6 px-3">
+                                                <h3 className="text-2xl">Accessories</h3>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
+                                        <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                            <div className="image__parent w-full">
+                                                <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
+                                            </div>
+                                            <div className="card__content py-6 px-3">
+                                                <h3 className="text-2xl">Accessories</h3>
+                                            </div>
                                         </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
+                                        <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                            <div className="image__parent w-full">
+                                                <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
+                                            </div>
+                                            <div className="card__content py-6 px-3">
+                                                <h3 className="text-2xl">Accessories</h3>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
+                                        <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                            <div className="image__parent w-full">
+                                                <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
+                                            </div>
+                                            <div className="card__content py-6 px-3">
+                                                <h3 className="text-2xl">Accessories</h3>
+                                            </div>
                                         </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
+                                        <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                            <div className="image__parent w-full">
+                                                <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
+                                            </div>
+                                            <div className="card__content py-6 px-3">
+                                                <h3 className="text-2xl">Accessories</h3>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div className="flex justify-center">
                                     <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
                                         <div className="img__parent">
@@ -269,7 +284,7 @@ const BathFittings = ()=>{
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Accessories Catalogue</p>
-                                            <button className="mt-3 btn bg-orange text-white">Download</button>
+                                            <DownloadButton brochure={"Bath Fitting Accessories Catalogue"} />
                                         </div>
                                     </div> 
                                 </div>

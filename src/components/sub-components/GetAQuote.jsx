@@ -1,4 +1,4 @@
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from "@headlessui/react";
+import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { useState } from "react";
 
 const GetAQuote = ()=>{
@@ -25,11 +25,11 @@ const GetAQuote = ()=>{
             className="fixed inset-0 bg-white/20 backdrop-blur-[1px] duration-200 ease-in-out data-[closed]:opacity-0"
         />
         <div className="fixed inset-0 flex w-screen items-center justify-center p-4 z-[999]">
-            <DialogPanel className="max-w-[720px] w-full border bg-white rounded-3xl p-8 md:p-8 xl:p-16 z-[999]">
+            <DialogPanel className="max-w-[720px] w-full border border-solid border-darkGray bg-white rounded-3xl p-8 md:p-8 xl:p-16 z-[999]">
                 {/* <DialogTitle className={`font-semibold text-xl text-left`}>
                     Get your personalised quote :)
                 </DialogTitle> */}
-                <div className="close__button__modal flex justify-end">
+                <div className="close__button__modal flex justify-end md:hidden">
                     <button onClick={()=>setIsOpen(false)} className="font-semibold text-2xl mb-5">X</button>
                 </div>
                 <div className="quote_form ">

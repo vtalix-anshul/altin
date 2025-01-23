@@ -5,6 +5,7 @@ import altin__exports__panel__1 from "../../assets/images/altin__exports__panel_
 import altin__exports__panel__2 from "../../assets/images/altin__exports__panel__2.png"
 import altin__exports__panel__3 from "../../assets/images/altin__exports__panel__3.png"
 import altin__exports__panel__4 from "../../assets/images/altin__exports__panel__4.png"
+import DownloadButton from "../sub-components/DownloadButton";
 const SanitaryWare = ()=>{
     return(<>
         <div className="product__small__home__banner h-dvh -mt-24 relative grid items-center">
@@ -91,7 +92,7 @@ const SanitaryWare = ()=>{
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Closet Catalogue</p>
-                                            <button className="mt-3 btn bg-orange text-white">Download</button>
+                                            <DownloadButton brochure={"Closet Catalogue"} />
                                         </div>
                                     </div> 
                                 </div>
@@ -154,7 +155,7 @@ const SanitaryWare = ()=>{
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Basin Catalogue</p>
-                                            <button className="mt-3 btn bg-orange text-white">Download</button>
+                                            <DownloadButton  brochure={"Basin Catalogue"} />
                                         </div>
                                     </div> 
                                 </div>
@@ -217,7 +218,7 @@ const SanitaryWare = ()=>{
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Urinal Catalogue</p>
-                                            <button className="mt-3 btn bg-orange text-white">Download</button>
+                                            <DownloadButton brochure={"Urinal Catalogue"} />
                                         </div>
                                     </div> 
                                 </div>
@@ -280,7 +281,7 @@ const SanitaryWare = ()=>{
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Accessories Catalogue</p>
-                                            <button className="mt-3 btn bg-orange text-white">Download</button>
+                                            <DownloadButton brochure={"Accessories Catalogue"} />
                                         </div>
                                     </div> 
                                 </div>

@@ -1,6 +1,7 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import arrow__down from "../../assets/images/arrow__down.png";
 import book__image from "../../assets/images/book__image.jpeg";
+import DownloadButton from "../sub-components/DownloadButton";
 const Tiles = ()=>{
     return (<>
         <div className="product__small__home__banner h-dvh -mt-24 relative grid items-center">
@@ -36,7 +37,7 @@ const Tiles = ()=>{
                                     </div>
                                     <div className="button__parent text-center">
                                         <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <DownloadButton size={"600x800 MM"} brochure={"GVT/PGVT"} />
                                     </div>
                                 </div>    
                                 <div className="card flex flex-col gap-6 p-3">
@@ -44,8 +45,8 @@ const Tiles = ()=>{
                                         <img src={book__image} alt="" /> 
                                     </div>
                                     <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <p className="text-2xl">Double Charged</p>
+                                        <DownloadButton size={"600x800 MM"} brochure={"Double Charged"} />
                                     </div>
                                 </div>    
                                 <div className="card flex flex-col gap-6 p-3">
@@ -53,8 +54,8 @@ const Tiles = ()=>{
                                         <img src={book__image} alt="" /> 
                                     </div>
                                     <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <p className="text-2xl">Porcelain</p>
+                                        <DownloadButton size={"600x800 MM"} brochure={"Porcelain"}  />
                                     </div>
                                 </div>    
                                 <div className="card flex flex-col gap-6 p-3">
@@ -62,46 +63,8 @@ const Tiles = ()=>{
                                         <img src={book__image} alt="" /> 
                                     </div>
                                     <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
-                                    </div>
-                                </div>    
-                            </TabPanel> 
-                            <TabPanel className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                                <div className="card flex flex-col gap-6 p-3">
-                                    <div className="img__parent">
-                                        <img src={book__image} alt="" /> 
-                                    </div>
-                                    <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
-                                    </div>
-                                </div>    
-                                <div className="card flex flex-col gap-6 p-3">
-                                    <div className="img__parent">
-                                        <img src={book__image} alt="" /> 
-                                    </div>
-                                    <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
-                                    </div>
-                                </div>    
-                                <div className="card flex flex-col gap-6 p-3">
-                                    <div className="img__parent">
-                                        <img src={book__image} alt="" /> 
-                                    </div>
-                                    <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
-                                    </div>
-                                </div>    
-                                <div className="card flex flex-col gap-6 p-3">
-                                    <div className="img__parent">
-                                        <img src={book__image} alt="" /> 
-                                    </div>
-                                    <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <p className="text-2xl">Wall</p>
+                                        <DownloadButton size={"600x800 MM"}  brochure={"Wall"} />
                                     </div>
                                 </div>    
                             </TabPanel> 
@@ -112,7 +75,7 @@ const Tiles = ()=>{
                                     </div>
                                     <div className="button__parent text-center">
                                         <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <DownloadButton size={"600x1200 MM"}  brochure={"GVT/PGVT"} />
                                     </div>
                                 </div>    
                                 <div className="card flex flex-col gap-6 p-3">
@@ -120,8 +83,8 @@ const Tiles = ()=>{
                                         <img src={book__image} alt="" /> 
                                     </div>
                                     <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <p className="text-2xl">Double Charged</p>
+                                        <DownloadButton size={"600x1200 MM"}  brochure={"Double Charged"} />
                                     </div>
                                 </div>    
                                 <div className="card flex flex-col gap-6 p-3">
@@ -129,8 +92,8 @@ const Tiles = ()=>{
                                         <img src={book__image} alt="" /> 
                                     </div>
                                     <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <p className="text-2xl">Porcelain</p>
+                                        <DownloadButton size={"600x1200 MM"}  brochure={"Porcelain"} />
                                     </div>
                                 </div>    
                                 <div className="card flex flex-col gap-6 p-3">
@@ -138,8 +101,8 @@ const Tiles = ()=>{
                                         <img src={book__image} alt="" /> 
                                     </div>
                                     <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <p className="text-2xl">Wall</p>
+                                        <DownloadButton size={"600x1200 MM"}  brochure={"Wall"} />
                                     </div>
                                 </div>    
                             </TabPanel> 
@@ -150,7 +113,7 @@ const Tiles = ()=>{
                                     </div>
                                     <div className="button__parent text-center">
                                         <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <DownloadButton size={"800x800 MM"}  brochure={"GVT/PGVT"} />
                                     </div>
                                 </div>    
                                 <div className="card flex flex-col gap-6 p-3">
@@ -158,8 +121,8 @@ const Tiles = ()=>{
                                         <img src={book__image} alt="" /> 
                                     </div>
                                     <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <p className="text-2xl">Double Charged</p>
+                                        <DownloadButton size={"800x800 MM"}  brochure={"Double Charged"} />
                                     </div>
                                 </div>    
                                 <div className="card flex flex-col gap-6 p-3">
@@ -167,8 +130,8 @@ const Tiles = ()=>{
                                         <img src={book__image} alt="" /> 
                                     </div>
                                     <div className="button__parent text-center">
-                                        <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <p className="text-2xl">Porcelain</p>
+                                        <DownloadButton size={"800x800 MM"}  brochure={"Porcelain"} />
                                     </div>
                                 </div>    
                                 <div className="card flex flex-col gap-6 p-3">
@@ -176,8 +139,46 @@ const Tiles = ()=>{
                                         <img src={book__image} alt="" /> 
                                     </div>
                                     <div className="button__parent text-center">
+                                        <p className="text-2xl">Wall</p>
+                                        <DownloadButton size={"800x800 MM"}  brochure={"Wall"} />
+                                    </div>
+                                </div>    
+                            </TabPanel> 
+                            <TabPanel className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                                <div className="card flex flex-col gap-6 p-3">
+                                    <div className="img__parent">
+                                        <img src={book__image} alt="" /> 
+                                    </div>
+                                    <div className="button__parent text-center">
                                         <p className="text-2xl">GVT / PGVT</p>
-                                        <button className="mt-3 btn bg-orange text-white">Download</button>
+                                        <DownloadButton size={"800x1600 MM"}  brochure={"GVT/PGVT"} />
+                                    </div>
+                                </div>    
+                                <div className="card flex flex-col gap-6 p-3">
+                                    <div className="img__parent">
+                                        <img src={book__image} alt="" /> 
+                                    </div>
+                                    <div className="button__parent text-center">
+                                        <p className="text-2xl">Double Charged</p>
+                                        <DownloadButton size={"800x1600 MM"}  brochure={"Double Charged"} />
+                                    </div>
+                                </div>    
+                                <div className="card flex flex-col gap-6 p-3">
+                                    <div className="img__parent">
+                                        <img src={book__image} alt="" /> 
+                                    </div>
+                                    <div className="button__parent text-center">
+                                        <p className="text-2xl">Porcelain</p>
+                                        <DownloadButton size={"800x1600 MM"}  brochure={"Porcelain"} />
+                                    </div>
+                                </div>    
+                                <div className="card flex flex-col gap-6 p-3">
+                                    <div className="img__parent">
+                                        <img src={book__image} alt="" /> 
+                                    </div>
+                                    <div className="button__parent text-center">
+                                        <p className="text-2xl">Wall</p>
+                                        <DownloadButton size={"800x1600 MM"}  brochure={"Wall"} />
                                     </div>
                                 </div>    
                             </TabPanel> 
