@@ -18,11 +18,11 @@ const Header = () => {
   // Function to check if the current path is active
 
   return (
-    <header className="bg-red-900 z-50">
+    <header className="z-40">
       {/* Pass isActive function to NavMenu */}
-      <div className='flex justify-between items-center z-50 bg-red-900'>
+      <div className='flex justify-between items-center z-40 bg-darkGray'>
         <NavMenu />
-        <div className="flex md:hidden pr-2.5 min-w-28 w-full justify-end items-center z-50">
+        <div className="flex md:hidden pr-2.5 min-w-28 w-full justify-end items-center z-40">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}

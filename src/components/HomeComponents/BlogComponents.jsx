@@ -20,8 +20,8 @@ const BlogComponents = ()=>{
                         </div>
                         <div className="blog__card__content flex flex-col p-2 md:p-4 lg:p-8 gap-6">
                             <div className="blog__content w-full">
-                                <h4 className="text-2xl">Worlds Second Largest Ceramic Expo-2017</h4>
-                                <p className="text-darkGray">2017 was the year of new beginnings as the expo was highly successful and the exhibitors gained a good amount of business through Vibrant Ceramics 2017.</p>
+                                <h4 className="text-2xl">Why Indian Porcelain Tiles Are Capturing Global Attention!</h4>
+                                <p className="text-darkGray"> India has emerged as a global hub for porcelain tiles, thanks to its unparalleled craftsmanship, innovative designs, and competitive pricing. From intricate patterns to sleek modern aesthetics, Indian porcelain tiles are transforming homes and commercial spaces worldwide.</p>
                             </div>
                             <Link to="/blog/1" className="text-lg">Know more</Link>
                         </div>
@@ -32,8 +32,8 @@ const BlogComponents = ()=>{
                         </div>
                         <div className="blog__card__content flex flex-col p-2 md:p-4 lg:p-8 gap-6">
                             <div className="blog__content w-full">
-                                <h4 className="text-2xl">Worlds Second Largest Ceramic Expo-2017</h4>
-                                <p className="text-darkGray">2017 was the year of new beginnings as the expo was highly successful and the exhibitors gained a good amount of business through Vibrant Ceramics 2017.</p>
+                                <h4 className="text-2xl">Indian Ceramic Sanitary Ware: A Perfect Blend of Functionality and Style</h4>
+                                <p className="text-darkGray">India has long been celebrated for its rich craftsmanship and innovative manufacturing capabilities, and the ceramic sanitary ware industry is no exception. Combining functionality with impeccable style, Indian ceramic sanitary ware has gained global recognition for its quality, design, and versatility.</p>
                             </div>
                             <Link to="/blog/2" className="text-lg">Know more</Link>
                         </div>
@@ -44,8 +44,8 @@ const BlogComponents = ()=>{
                         </div>
                         <div className="blog__card__content flex flex-col p-2 md:p-4 lg:p-8 gap-6">
                             <div className="blog__content w-full">
-                                <h4 className="text-2xl">Worlds Second Largest Ceramic Expo-2017</h4>
-                                <p className="text-darkGray">2017 was the year of new beginnings as the expo was highly successful and the exhibitors gained a good amount of business through Vibrant Ceramics 2017.</p>
+                                <h4 className="text-2xl">Indian Bath Fittings: From Sleek Faucets to Luxurious Showers</h4>
+                                <p className="text-darkGray">In the world of interior design and construction, bath fittings play a crucial role in blending functionality with aesthetics. Over the years, India has emerged as a significant global player in the manufacturing and export of bath fittings, offering a wide range of products that cater to diverse preferences and needs.</p>
                             </div>
                             <Link to="/blog/3" className="text-lg">Know more</Link>
                         </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import container__image from "../../assets/images/altin__container.png";
 const ProjectTalk = ()=>{
     return (<>
@@ -53,7 +54,7 @@ const ProjectTalk = ()=>{
                 <div className="get__in__touch flex flex-col gap-6 p-3 items-center">
                     <h5 className="w-full md:w-2/3 text-white text-2xl text-center">Let&apos;s create something extraordinary together.
                     Contact us today for expert guidance and innovative solutions!</h5>
-                    <button className="bg-orange text-lg btn w-fit text-white">Get in touch</button>
+                    <Link to='/contact-us' className="bg-orange text-lg btn w-fit text-white">Get in touch</Link>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import arrow__down from "../../assets/images/arrow__down.png";
 
 const HomeBanner = ()=>{
-    const form__row = `w-full pb-8 flex gap-6 flex-col sm:flex-row`;
+    const form__row = `w-full pb-6 md:pb-8 flex gap-6 flex-col sm:flex-row`;
     const form__group = `w-full`;
     const form__input = `w-full appearance-none outline-none border-b border-solid border-darkGray min-h-8 bg-transparent`;
     const input__parent = `w-full`;
@@ -35,7 +35,7 @@ const HomeBanner = ()=>{
                         </div>
                         </div>
                     </div>
-                    <div className="contact__form py-2 px-7 md:px-9 xl:px-14">
+                    <div className="contact__form py-2 px-4 md:px-9 xl:px-14">
                         <div className="main__contact__form">
                             <div className="form__heading"><h2 className="mb-6">Say Hello :)</h2></div>
                             <div className={form__row}>

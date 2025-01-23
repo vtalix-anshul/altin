@@ -9,6 +9,9 @@ import Products from "./pages/Products";
 import Tiles from "./components/SmallProductComponent/Tiles";
 import SanitaryWare from "./components/SmallProductComponent/SanitaryWare";
 import BathFittings from "./components/SmallProductComponent/BathFittings";
+import Blog1 from "./pages/Blog1";
+import Blog2 from "./pages/Blog2";
+import Blog3 from "./pages/Blog3";
 function App() {
   return (
     <>
@@ -22,6 +25,10 @@ function App() {
           <Route path="/tiles" element={<Tiles />} />
           <Route path="/sanitary" element={<SanitaryWare />} />
           <Route path="/bath-fittings" element={<BathFittings />} />
+          <Route path="/blog/1" element={<Blog1 />} />
+          <Route path="/blog/2" element={<Blog2 />} />
+          <Route path="/blog/3" element={<Blog3 />} />
+          <Route path="/blog" element={<Blog1 />} />
         </Routes>
         <Footer />
       </Router>
