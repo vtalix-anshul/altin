@@ -1,11 +1,15 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import arrow__down from "../../assets/images/arrow__down.png";
-import book__image from "../../assets/images/book__image.jpeg";
+import bath__accessories from "../../assets/images/CatalogueImages/bath__accessories.png"
+import shower from "../../assets/images/CatalogueImages/shower.png"
+import health__faucet from "../../assets/images/CatalogueImages/health__faucet.png"
+import faucet from "../../assets/images/CatalogueImages/faucet.png"
 import altin__exports__panel__1 from "../../assets/images/altin__exports__panel__1.png"
 import altin__exports__panel__2 from "../../assets/images/altin__exports__panel__2.png"
 import altin__exports__panel__3 from "../../assets/images/altin__exports__panel__3.png"
 import altin__exports__panel__4 from "../../assets/images/altin__exports__panel__4.png"
 import DownloadButton from "../sub-components/DownloadButton";
+import { Link } from "react-router-dom";
 const BathFittings = ()=>{
     return(<>
         <div className="product__small__home__banner h-dvh -mt-24 relative grid items-center">
@@ -88,7 +92,7 @@ const BathFittings = ()=>{
                                 <div className="flex justify-center">
                                     <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
                                         <div className="img__parent">
-                                            <img src={book__image} alt="" className="w-[90%] mx-auto"/> 
+                                            <img src={faucet} alt="" className="w-[90%] mx-auto"/> 
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Faucet Catalogue</p>
@@ -151,7 +155,7 @@ const BathFittings = ()=>{
                                 <div className="flex justify-center">
                                     <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
                                         <div className="img__parent">
-                                            <img src={book__image} alt="" className="w-[90%] mx-auto"/> 
+                                            <img src={shower} alt="" className="w-[90%] mx-auto"/> 
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Shower Catalogue</p>
@@ -215,7 +219,7 @@ const BathFittings = ()=>{
                                 <div className="flex justify-center">
                                     <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
                                         <div className="img__parent">
-                                            <img src={book__image} alt="" className="w-[90%] mx-auto"/> 
+                                            <img src={health__faucet} alt="" className="w-[90%] mx-auto"/> 
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Health Faucet Catalogue</p>
@@ -280,7 +284,7 @@ const BathFittings = ()=>{
                                 <div className="flex justify-center">
                                     <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
                                         <div className="img__parent">
-                                            <img src={book__image} alt="" className="w-[90%] mx-auto"/> 
+                                            <img src={bath__accessories} alt="" className="w-[90%] mx-auto"/> 
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">Accessories Catalogue</p>
@@ -290,6 +294,10 @@ const BathFittings = ()=>{
                                 </div>
                             </TabPanel> 
                         </TabPanels>
+                        <div className="w-full flex gap-6 flex-wrap justify-center">
+                            <Link to="/tiles" className="grid place-items-center rounded-full text-2xl md:max-w-[350px] lg:max-w-[500px] w-full h-[150px] hover:bg-lightGray border border-solid border-darkGray">Porcelian Tiles</Link>
+                            <Link to="/sanitary" className="grid place-items-center rounded-full text-2xl md:max-w-[350px] lg:max-w-[500px] w-full h-[150px] hover:bg-lightGray border border-solid border-darkGray">Sanitary Wares</Link>
+                        </div>
                     </div>
                 </TabGroup>
             </div>

@@ -14,7 +14,7 @@ const NavMenu = () => {
       <div className="flex justify-start lg:flex-1">
         <Link to="/" className="-m-1.5 p-1.5">
           <span className="sr-only">Altin</span>
-          <img src={newLogo} alt="Logo" className="h-12 w-auto" />
+          <img src={newLogo} alt="Logo" className="w-auto" />
         </Link>
       </div>
 

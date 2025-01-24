@@ -34,10 +34,10 @@ const GlobalMaps = ()=>{
                 </div>
             </div>
             <div className="truck__parent__div flex flex-col md:flex-row gap-8">
-                <div className="left__div px-4 md:px-8 lg:px-16 overflow-hidden">
+                <div className="left__div sm:h-[600px] sm:w-[600px] md:h-[100%] px-4 md:px-8 lg:px-16 overflow-hidden md:w-full">
                     <img src={truck} alt="" className="object-cover scale-125"/>
                 </div>
-                <div className="right__div px-4 md:px-8 lg:px-16 grid place-items-center">
+                <div className="right__div px-4 md:px-0 md:pr-16 grid place-items-center w-full">
                     <div className="truck__content__parent py-10 md:py-0">
                         <h4 className="font-semibold text-3xl md:text-5xl">Close to the Port</h4>
                         <p className="md:text-2xl mt-6">The shipment is just 115 miles away from Mundra Port, India&apos;s largest and most accessible port. Its excellent road connectivity ensures fast and timely delivery of consignments.</p>

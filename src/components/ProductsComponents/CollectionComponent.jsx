@@ -57,7 +57,7 @@ const CollectionComponent = ()=>{
                                     <p className="text-darkGray group-hover:text-white w-full lg:w-2/3">Discover the perfect blend of functionality and style with our exclusive range of sanitary ware.</p>
                                 </div>
                             </div>
-                            <div className="button__parent flex flex-wrap gap-">
+                            <div className="button__parent flex flex-wrap gap-3">
                                 <button className="bg-white btn border border-darkGray border-solid hover:border-orange group-hover:text-black">One Piece Closet</button>
                                 <button className="bg-white btn border border-darkGray border-solid hover:border-orange group-hover:text-black">Wall Hung</button>
                                 <button className="bg-white btn border border-darkGray border-solid hover:border-orange group-hover:text-black">Pan</button>
@@ -84,7 +84,7 @@ const CollectionComponent = ()=>{
                                     <p className="text-darkGray group-hover:text-white w-full lg:w-2/3">From sleek faucets to luxurious showers, and stylish accessories, we offer everything you need for a modern bathroom.</p>
                                 </div>
                             </div>
-                            <div className="button__parent flex flex-wrap gap-">
+                            <div className="button__parent flex flex-wrap gap-3">
                                 <button className="bg-white btn border border-darkGray border-solid hover:border-orange group-hover:text-black">Faucet</button>
                                 <button className="bg-white btn border border-darkGray border-solid hover:border-orange group-hover:text-black">Shower</button>
                                 <button className="bg-white btn border border-darkGray border-solid hover:border-orange group-hover:text-black">Accessories</button>

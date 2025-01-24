@@ -22,7 +22,7 @@ const HomeBanner = ()=>{
                         <p><span className="text-orange">/ </span> &nbsp; &nbsp; &nbsp;ALTIN EXPORTS</p>
                     </div>
                     <div className="w-full flex flex-col gap-5 py-4 px-4 md:px-16 xl:px-56 text-center">
-                        <h4 className="text-2xl md:text-5xl">Altin - Elevating spaces, Globally!</h4>
+                        <h4 className="text-2xl md:text-5xl">Discover the concept behind excellence</h4>
                         <div className="para__info text-darkGray flex flex-col gap-8">
                             <p>At Altin Exports, we pride ourselves on being a trusted exporter of premium tiles, sanitary ware, and bath fittings. Our unique business model is built on strategic partnerships with leading manufacturers, allowing us to deliver innovative and high-quality products tailored to meet the needs of our global clientele.</p>
                             <p>With a keen eye for design and a deep understanding of market trends, we provide our partner manufacturers with creative concepts and detailed instructions, ensuring that every product reflects excellence in both form and function. From the initial design phase to the final product, we oversee every step of the process, maintaining the highest standards of quality craftsmanship.</p>

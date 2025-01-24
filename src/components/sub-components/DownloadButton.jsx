@@ -19,7 +19,7 @@ const DownloadButton  = ({size, brochure})=>{
     const finalBrochure = size? `${brochure} - ${size}` : `${brochure}`;
     return (<>
         <button className="btn mt-3 text-white bg-orange" onClick={()=>setBrochureForomOpen(true)}>Donwload</button>
-        <Dialog open={brochureFormOpen} onClose={()=>setBrochureForomOpen(false)} className={`bg-red-900 w-screen h-screen z-[999]`}>
+        <Dialog open={brochureFormOpen} onClose={()=>setBrochureForomOpen(false)} className={`w-screen h-screen z-[999]`}>
             <DialogBackdrop transition
                 className="fixed inset-0 bg-white/20 backdrop-blur-[3px] duration-200 ease-in-out data-[closed]:opacity-0"
             />

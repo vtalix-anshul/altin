@@ -1,7 +1,7 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
-import newLogo from "../../assets/images/Logo.png";
+import newLogo from "../../assets/Logo2.svg";
 import GetAQuote from "./GetAQuote";
 
 const SideMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {   
@@ -15,7 +15,7 @@ const SideMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
         <div className="fixed inset-0 z-100 bg-gray-500 opacity-75 transition-all duration-300" />
         <DialogPanel className="fixed inset-y-0 right-0 z-[999] w-[100%] sm:w-64 bg-white p-6 px-4 pt-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between mb-6">
-            <Link to="/" className="-m-1.5 p-1.5 bg-black">
+            <Link to="/" className="-m-1.5 p-1.5">
                 <img src={newLogo} alt="Logo" className="h-8 w-auto" />
             </Link>
             <button
@@ -33,6 +33,9 @@ const SideMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                 </Link>
                 <Link to="/about" className="text-gray-900 block text-lg">
                     About
+                </Link>
+                <Link to="/products" className="text-gray-900 block text-lg">
+                    Products
                 </Link>
                 <Link to="/contact-us" className="text-gray-900 block text-lg">
                     Contact Us
