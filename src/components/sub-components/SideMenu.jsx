@@ -4,12 +4,7 @@ import { Link } from "react-router-dom";
 import newLogo from "../../assets/Logo2.svg";
 import GetAQuote from "./GetAQuote";
 
-const SideMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {   
-    const links = [
-    { to: "/about", label: "About Us" },
-    { to: "/products", label: "Products" },
-    { to: "/contact-us", label: "Contact Us" },
-    ];
+const SideMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
     return (
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-100 bg-gray-500 opacity-75 transition-all duration-300" />
