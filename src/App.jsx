@@ -12,7 +12,7 @@ import BathFittings from "./components/SmallProductComponent/BathFittings";
 import Blog1 from "./pages/Blog1";
 import Blog2 from "./pages/Blog2";
 import Blog3 from "./pages/Blog3";
-import whatsapp__image from "./assets/images/whatsapp__fixed.svg";
+import whatsapp__image from "./assets/images/whatsapp__fixed.png";
 function App() {
   return (
     <>
@@ -32,8 +32,8 @@ function App() {
           <Route path="/blog" element={<Blog1 />} />
         </Routes>
         <Footer />
-        <a target="_blank" href="https://wa.me/+918488884599" className="fixed bottom-7 right-7 w-12 h-12">
-          <img src={whatsapp__image} alt="" />
+        <a target="_blank" href="https://wa.me/+918488884599" className="bg-darkGray rounded-full fixed bottom-7 right-7 w-16 h-16">
+          <img src={whatsapp__image} alt="" className="w-full h-full"/>
         </a>
       </Router>
     </>

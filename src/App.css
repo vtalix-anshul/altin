@@ -23,13 +23,13 @@
 }
 
 .about__home__banner{
-    background-image:url("./assets/images/altin__exports__panel__3.png");
+    background-image:url("./assets/images/about__banner.png");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .product__home__banner{
-    background-image:url("./assets/images/altin__exports__panel__3.png");
+    background-image:url("./assets/images/product__banner.png");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,8 +57,29 @@
     background-image:url("./assets/images/altin__exports__panel__2.png");
 }
 
-.product__small__home__banner{
+.product__small__home__banner__1{
     background-image:url("./assets/images/altin__exports__panel__1.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product__small__home__banner__2{
+    background-image:url("./assets/images/altin__exports__panel__2.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product__small__home__banner__3{
+    background-image:url("./assets/images/bath__fitting__banner.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.contact__home__banner{
+    background-image:url("./assets/images/contact__banner.png");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;

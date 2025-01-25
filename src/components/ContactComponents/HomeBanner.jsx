@@ -7,7 +7,7 @@ const HomeBanner = ()=>{
     const input__parent = `w-full`;
     const form__label = `mb-3`;
     return (<>
-        <div className="about__home__banner h-dvh -mt-24 relative grid items-center">
+        <div className="contact__home__banner h-dvh -mt-24 relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
                 <h4 className="text-2xl">CONTACT US</h4>
                 <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Don&apos;t be shy</h1>
@@ -27,7 +27,7 @@ const HomeBanner = ()=>{
                             <a href="mailto:info@altinexports.com" className="text-orange w-fit">info@altinexports.com</a>
                         </div>
                         <div className="aline__info flex flex-col justify-between gap-6">
-                            <p>+91 84888 39925</p>
+                            <a href="tel:+918488839925" target="_blank">+91 84888 39925</a>
                             <div className="contact__info">
                                 <p>503, Asopalav Avenue,</p>
                                 <p>Nana Mava Main Road,</p>

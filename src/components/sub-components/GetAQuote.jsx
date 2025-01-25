@@ -6,7 +6,7 @@ const GetAQuote = ()=>{
     const form__row = `w-full pb-8 flex gap-6 flex-col sm:flex-row`;
     const form__group = `w-full`;
     const form__input = `w-full appearance-none outline-none border-b border-solid border-darkGray min-h-8 bg-transparent`;
-    const input__parent = `w-full`;
+    const input__parent = `w-full mt-1`;
     const form__label = `mb-3`;
 
     const [isOpen, setIsOpen] = useState(false);
@@ -70,17 +70,17 @@ const GetAQuote = ()=>{
                                         <input type="text" id="country" name="country" placeholder="Type your country" className={form__input}/>
                                     </div>
                                 </div><div className={form__group}>
-                                    <label htmlFor="topic" className={form__label}>Topic</label>
+                                    <label htmlFor="topic" className={form__label}>Product</label>
                                     <div className={input__parent}>
-                                        <input type="text" id="topic" name="topic" placeholder="Inquire about" className={form__input}/>
+                                        <input type="text" id="product" name="product" placeholder="Inquire product" className={form__input}/>
                                     </div>
                                 </div>
                             </div>
                             <div className={form__row}>
                                 <div className={form__group}>
-                                    <label htmlFor="message">Message</label>
+                                    <label htmlFor="message">Description</label>
                                     <div className={input__parent}>
-                                        <input type="text" name="message" id="message" placeholder="Start Typing your message" className={form__input} />
+                                        <textarea name="description" id="description" rows={2} placeholder="Start Typing your message" className={form__input}></textarea>
                                     </div>
                                 </div>
                             </div>

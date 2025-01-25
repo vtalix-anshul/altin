@@ -1,3 +1,9 @@
+import integrity from "../../assets/images/integrity.png";
+import reliability from "../../assets/images/reliability.png";
+import quality from "../../assets/images/quality.png";
+import customer__centric from "../../assets/images/customer__centric.png";
+import commitment from "../../assets/images/commitment.png";
+
 const OurValues = ()=>{
     return (<>
         <div className="bg-lightGray">
@@ -10,7 +16,9 @@ const OurValues = ()=>{
                     <div className="first__row flex flex-col md:flex-row w-full flex-wrap gap-5 justify-center items-center lg:items-start">
                         <div className="content__box w-full max-w-[310px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                                <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">1</div>
+                                <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
+                                    <img src={integrity} alt="icon" />
+                                </div>
                             </div>
                             <div className="content__box mt-4">
                                 <h5 className="text-lg mb-4">Integrity and Ethics</h5>
@@ -19,7 +27,9 @@ const OurValues = ()=>{
                         </div>
                         <div className="content__box w-full max-w-[310px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                                <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">2</div>
+                            <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
+                                    <img src={reliability} alt="icon" />
+                                </div>
                             </div>
                             <div className="content__box mt-4">
                                 <h5 className="text-lg mb-4">Reliability and Trust</h5>
@@ -28,7 +38,9 @@ const OurValues = ()=>{
                         </div>
                         <div className="content__box w-full max-w-[340px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                                <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">3</div>
+                            <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
+                                    <img src={quality} alt="icon" />
+                                </div>
                             </div>
                             <div className="content__box mt-4">
                                 <h5 className="text-lg mb-4">Quality First</h5>
@@ -37,7 +49,9 @@ const OurValues = ()=>{
                         </div>
                         <div className="content__box w-full max-w-[310px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                                <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">4</div>
+                            <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
+                                    <img src={commitment} alt="icon" />
+                                </div>
                             </div>
                             <div className="content__box mt-4">
                                 <h5 className="text-lg mb-4">Commitment to Information</h5>
@@ -46,7 +60,9 @@ const OurValues = ()=>{
                         </div>
                         <div className="content__box w-full max-w-[310px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                                <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">5</div>
+                            <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
+                                    <img src={customer__centric} alt="icon" />
+                                </div>
                             </div>
                             <div className="content__box mt-4">
                                 <h5 className="text-lg mb-4">Customer Centric Approach</h5>
