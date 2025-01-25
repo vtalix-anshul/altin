@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const GetAQuote = ()=>{
     
-    const form__row = `w-full md:pb-8 flex gap-6 flex-col sm:flex-row`;
+    const form__row = `w-full pb-8 flex gap-6 flex-col sm:flex-row`;
     const form__group = `w-full`;
     const form__input = `w-full appearance-none outline-none border-b border-solid border-darkGray min-h-8 bg-transparent`;
     const input__parent = `w-full`;
@@ -22,7 +22,7 @@ const GetAQuote = ()=>{
         </div>
         <Dialog open={isOpen} onClose={()=>setIsOpen(false)} className={`bg-red-900 w-screen h-screen z-[999]`}>
         <DialogBackdrop transition
-            className="fixed inset-0 bg-white/20 backdrop-blur-[1px] duration-200 ease-in-out data-[closed]:opacity-0"
+            className="fixed inset-0 bg-white/20 backdrop-blur-[2px] duration-200 ease-in-out data-[closed]:opacity-0"
         />
         <div className="fixed inset-0 flex w-screen items-center justify-center p-4 z-[999]">
             <DialogPanel className="max-w-[720px] w-full border border-solid border-darkGray bg-white rounded-3xl p-8 md:p-8 xl:p-16 z-[999]">
@@ -94,38 +94,6 @@ const GetAQuote = ()=>{
                 </div>
             </DialogPanel>
         </div>
-        {/* <div className="w-full h-screen z-[999] bg-red-900 grid grid-cols-2">
-            <DialogPanel 
-            <div className="w-screen flex flex-col justify-start items-start">
-                <label htmlFor="name">Name</label>
-                <input id="name" type="text" placeholder="Your Name" className="border-solid border-b-[1px] p-1" />
-            </div>
-
-            <div className="w-full flex flex-col justify-start items-start">
-                <label htmlFor="mobile">Mobile</label>
-                <input id="mobile" type="text" placeholder="Your Contact Number" className="border-solid border-b-[1px] p-1" />
-            </div>
-
-            <div className="w-full flex flex-col justify-start items-start">
-                <label htmlFor="company">Company</label>
-                <input id="company" type="text" placeholder="Your Name" className="border-solid border-b-[1px] p-1" />
-            </div>
-
-            <div className="w-full flex flex-col justify-start items-start">
-                <label htmlFor="email">Email</label>
-                <input id="email" type="email" placeholder="Your Name" className="border-solid border-b-[1px] p-1" />
-            </div>
-
-            <div className="w-full flex flex-col justify-start items-start">
-                <label htmlFor="name">Name</label>
-                <input id="name" type="text" placeholder="Your Name" className="border-solid border-b-[1px] p-1" />
-            </div>
-
-            <div className="w-full flex flex-col justify-start items-start">
-                <label htmlFor="name">Name</label>
-                <input id="name" type="text" placeholder="Your Name" className="border-solid border-b-[1px] p-1" />
-            </div>
-        </div> */}
         </Dialog>
     </>);
 }

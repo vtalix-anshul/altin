@@ -28,7 +28,7 @@ const Footer = ()=>{
                     <img src={logo} alt="logo" className="w-fit" />
                     <div className="description">
                         <div className="title text-lg md:text-2xl">Altin Exports</div>
-                        <div className="sub__title text-black2 max-w-[300px]">We growing up your business with personal AI manager.</div>
+                        <div className="sub__title text-black2 max-w-[300px]">Elevating spaces globally!</div>
                     </div>
                 </div>
                 <div className="footer__links__second__parent flex md:flex-row gap-4 md:gap-8 lg:gap-20 flex-wrap">

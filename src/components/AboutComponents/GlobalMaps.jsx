@@ -1,13 +1,13 @@
 import truck from "../../assets/images/truck.png"
-import global__maps from "../../assets/images/global__map.png"
+import global__maps from "../../assets/images/Map.png"
 const GlobalMaps = ()=>{
     return (<>
         <div className="flex flex-col gap-2 container px-4 md:px-8 xl:px-16 py-16">
+            <h3 className="text-2xl md:text-5xl text-center font-semibold">Global Footprint</h3>
             <div className="map__div__parent">
-                <img src={global__maps} alt="" />
+                <img src={global__maps} alt="exporting countries map" />
             </div>
             <div className="pt-16 flex flex-col gap-6">
-                <h3 className="text-2xl md:text-5xl text-center font-semibold">Global Footprint</h3>
                 <div className="partner__parent_div pt-10 flex flex-col md:flex-row md:justify-between">
                     <div className="left__div w-full flex flex-col gap-4">
                         <h5 className="text-2xl md:text-5xl font-semibold">Our Reach</h5>
@@ -23,10 +23,10 @@ const GlobalMaps = ()=>{
                                 </div>
                             </div>
                             <div className="reach__partners__card flex flex-col gap-6">
-                                <div className=""><div className="button__div rounded-full bg-orange text-white w-16 h-16 grid place-items-center">20</div></div>
+                                <div className=""><div className="button__div rounded-full bg-orange text-white w-16 h-16 grid place-items-center">15</div></div>
                                 <div className="card__content flex flex-col gap-2">
                                     <h3 className="text-2xl">Countries</h3>
-                                    <p className="text-darkGray text-sm">Delivering excellence to over 20 countries across the globe.</p>
+                                    <p className="text-darkGray text-sm">Delivering excellence to over 15 countries across the globe.</p>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +40,7 @@ const GlobalMaps = ()=>{
                 <div className="right__div px-4 md:px-0 md:pr-16 grid place-items-center w-full">
                     <div className="truck__content__parent py-10 md:py-0">
                         <h4 className="font-semibold text-3xl md:text-5xl">Close to the Port</h4>
-                        <p className="md:text-2xl mt-6">The shipment is just 115 miles away from Mundra Port, India&apos;s largest and most accessible port. Its excellent road connectivity ensures fast and timely delivery of consignments.</p>
+                        <p className="md:text-xl mt-6 text-darkGray">The shipment is just 115 miles away from Mundra Port, India&apos;s largest and most accessible port. Its excellent road connectivity ensures fast and timely delivery of consignments.</p>
                     </div>
                 </div>
             </div>

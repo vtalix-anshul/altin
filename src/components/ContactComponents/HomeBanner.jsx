@@ -1,7 +1,7 @@
 import arrow__down from "../../assets/images/arrow__down.png";
 
 const HomeBanner = ()=>{
-    const form__row = `w-full pb-6 md:pb-8 flex gap-6 flex-col sm:flex-row`;
+    const form__row = `w-full pb-8 flex gap-6 flex-col sm:flex-row`;
     const form__group = `w-full`;
     const form__input = `w-full appearance-none outline-none border-b border-solid border-darkGray min-h-8 bg-transparent`;
     const input__parent = `w-full`;
@@ -26,13 +26,13 @@ const HomeBanner = ()=>{
                             <h3 className="text-3xl lg:text-5xl font-semibold">Let&apos;s work together</h3>
                             <a href="mailto:info@altinexports.com" className="text-orange w-fit">info@altinexports.com</a>
                         </div>
-                        <div className="aline__info w-1/2 flex flex-col justify-between gap-6">
-                        <p>+91 84888 39925</p>
-                        <div className="contact__info">
-                            <p>503, Asopalav Avenue,</p>
-                            <p>Nana Mava Main Road,</p>
-                            <p>Rajkot - 360005 (Guj.), India</p>
-                        </div>
+                        <div className="aline__info flex flex-col justify-between gap-6">
+                            <p>+91 84888 39925</p>
+                            <div className="contact__info">
+                                <p>503, Asopalav Avenue,</p>
+                                <p>Nana Mava Main Road,</p>
+                                <p>Rajkot - 360005 (Guj.), India</p>
+                            </div>
                         </div>
                     </div>
                     <div className="contact__form py-2 px-4 md:px-9 xl:px-14">
@@ -42,12 +42,12 @@ const HomeBanner = ()=>{
                                 <div className={form__group}>
                                     <label htmlFor="name" className={form__label}>Name</label>
                                     <div className={input__parent}>
-                                        <input type="text" id="name" name="name" placeholder="Your name" className={form__input}/>
+                                        <input type="text" id="name" name="name" placeholder="Your name" className={form__input} required/>
                                     </div>
                                 </div><div className={form__group}>
                                     <label htmlFor="mobile" className={form__label}>Mobile</label>
                                     <div className={input__parent}>
-                                        <input type="number" id="mobile" name="mobile" placeholder="Your number" className={form__input}/>
+                                        <input type="number" id="mobile" name="mobile" placeholder="Your number" className={form__input} required/>
                                     </div>
                                 </div>
                             </div>
@@ -55,12 +55,12 @@ const HomeBanner = ()=>{
                                 <div className={form__group}>
                                     <label htmlFor="company" className={form__label}>Company</label>
                                     <div className={input__parent}>
-                                        <input type="text" id="company" name="company" placeholder="Your company name" className={form__input}/>
+                                        <input type="text" id="company" name="company" placeholder="Your company name" className={form__input} required/>
                                     </div>
                                 </div><div className={form__group}>
-                                    <label htmlFor="email" className={form__label}>Mobile</label>
+                                    <label htmlFor="email" className={form__label}>Email</label>
                                     <div className={input__parent}>
-                                        <input type="email" id="email" name="email" placeholder="Your email" className={form__input}/>
+                                        <input type="email" id="email" name="email" placeholder="Your email" className={form__input} required/>
                                     </div>
                                 </div>
                             </div>

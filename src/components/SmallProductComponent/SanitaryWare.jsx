@@ -1,14 +1,11 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import arrow__down from "../../assets/images/arrow__down.png";
-import basin from "../../assets/images/CatalogueImages/basin.png";
-import urinal from "../../assets/images/CatalogueImages/urinal.png"
-import sanitary__accessories from "../../assets/images/CatalogueImages/sanitary__accessories.png"
-import one__piece from "../../assets/images/CatalogueImages/one__piece.png"
 import book__image from "../../assets/images/book__image.jpeg";
 import altin__exports__panel__1 from "../../assets/images/altin__exports__panel__1.png"
 import altin__exports__panel__2 from "../../assets/images/altin__exports__panel__2.png"
 import altin__exports__panel__3 from "../../assets/images/altin__exports__panel__3.png"
 import altin__exports__panel__4 from "../../assets/images/altin__exports__panel__4.png"
+import sanitary__wares from "../../assets/images/CatalogueImages/SanitaryWaresMockups.png";
 import DownloadButton from "../sub-components/DownloadButton";
 import { Link } from "react-router-dom";
 const SanitaryWare = ()=>{
@@ -28,8 +25,8 @@ const SanitaryWare = ()=>{
             <div className="container px-4 md:px-8 xl:px-16">
                 <TabGroup>
                     <div className="heading flex flex-col items-center justify-center gap-8">
-                        <h4 className="font-semibold text-4xl md:text-5xl">Download our sanitary ware catalogues</h4>
-                        <TabList className="size__button__parent flex justify-between flex-wrap gap-5">
+                        <h4 className="font-semibold text-4xl md:text-5xl text-center">Download our sanitary ware catalogues</h4>
+                        <TabList className="size__button__parent flex justify-center flex-wrap gap-5">
                             <Tab className="btn bg-white hover:border-orange border-solid border border-darkGray data-[selected]:bg-orange data-[selected]:border-orange data-[selected]:text-white data-[hover]:bg-orange data-[hover]:text-white data-[focus]:border-orange">Closet</Tab>
                             <Tab className="btn bg-white hover:border-orange border-solid border border-darkGray data-[selected]:bg-orange data-[selected]:border-orange data-[selected]:text-white data-[hover]:bg-orange data-[hover]:text-white data-[focus]:border-orange">Basin</Tab>
                             <Tab className="btn bg-white hover:border-orange border-solid border border-darkGray data-[selected]:bg-orange data-[selected]:border-orange data-[selected]:text-white data-[hover]:bg-orange data-[hover]:text-white data-[focus]:border-orange">Urinal</Tab>
@@ -90,17 +87,6 @@ const SanitaryWare = ()=>{
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex justify-center">
-                                    <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
-                                        <div className="img__parent">
-                                            <img src={one__piece} alt="" className="w-[90%] mx-auto"/> 
-                                        </div>
-                                        <div className="button__parent text-center">
-                                            <p className="text-2xl">Closet Catalogue</p>
-                                            <DownloadButton brochure={"Closet Catalogue"} />
-                                        </div>
-                                    </div> 
-                                </div>
                             </TabPanel>
                             <TabPanel className="flex gap-16 flex-col">
                                 <div className="flex gap-6 flex-wrap justify-center">
@@ -153,17 +139,6 @@ const SanitaryWare = ()=>{
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex justify-center">
-                                    <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
-                                        <div className="img__parent">
-                                            <img src={basin} alt="" className="w-[90%] mx-auto"/> 
-                                        </div>
-                                        <div className="button__parent text-center">
-                                            <p className="text-2xl">Basin Catalogue</p>
-                                            <DownloadButton  brochure={"Basin Catalogue"} />
-                                        </div>
-                                    </div> 
-                                </div>
                             </TabPanel>
                             <TabPanel className="flex gap-16 flex-col">
                                 <div className="flex gap-6 flex-wrap justify-center">
@@ -215,17 +190,6 @@ const SanitaryWare = ()=>{
                                             <h3 className="text-2xl">Urinal</h3>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="flex justify-center">
-                                    <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
-                                        <div className="img__parent">
-                                            <img src={urinal} alt="" className="w-[90%] mx-auto"/> 
-                                        </div>
-                                        <div className="button__parent text-center">
-                                            <p className="text-2xl">Urinal Catalogue</p>
-                                            <DownloadButton brochure={"Urinal Catalogue"} />
-                                        </div>
-                                    </div> 
                                 </div>
                             </TabPanel>
                             <TabPanel className="flex gap-16 flex-col">
@@ -279,19 +243,20 @@ const SanitaryWare = ()=>{
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex justify-center">
-                                    <div className="card flex gap-6 p-3 w-full items-center max-w-[450px]">
-                                        <div className="img__parent">
-                                            <img src={sanitary__accessories} alt="" className="w-[90%] mx-auto"/> 
-                                        </div>
-                                        <div className="button__parent text-center">
-                                            <p className="text-2xl">Accessories Catalogue</p>
-                                            <DownloadButton brochure={"Accessories Catalogue"} />
-                                        </div>
-                                    </div> 
-                                </div>
                             </TabPanel> 
                         </TabPanels>
+
+                        <div className="flex justify-center">
+                            <div className="card flex gap-6 p-3 flex-col sm:flex-row w-full items-center max-w-[450px]">
+                                <div className="img__parent">
+                                    <img src={sanitary__wares} alt="" className="w-[90%] mx-auto"/> 
+                                </div>
+                                <div className="button__parent text-center">
+                                    <p className="text-2xl">Sanitary Ware Catalogue</p>
+                                    <DownloadButton  brochure={"Sanitary Ware Catalogue"} />
+                                </div>
+                            </div> 
+                        </div>
 
                         <div className="w-full flex gap-6 flex-wrap justify-center">
                             <Link to="/tiles" className="grid place-items-center rounded-full text-2xl md:max-w-[350px] lg:max-w-[500px] w-full h-[150px] hover:bg-lightGray border border-solid border-darkGray">Porcelian Tiles</Link>

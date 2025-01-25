@@ -23,7 +23,7 @@ const NavMenu = () => {
           <Link
             key={to}
             to={to}
-            className={`xl:text-lg text-white`}
+            className={`xl:text-lg text-white hover:text-black`}
           >
             {label}
           </Link>
