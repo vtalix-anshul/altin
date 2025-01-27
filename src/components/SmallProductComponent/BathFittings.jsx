@@ -21,24 +21,26 @@ import Towel_Rail_111 from "../../assets/images/bath__fitting__images/Towel_Rail
 import Towel_Ring_110 from "../../assets/images/bath__fitting__images/Towel_Ring_110.png"
 import Tumbler_Holder_114 from "../../assets/images/bath__fitting__images/Tumbler_Holder_114.png"
 import bath__fittings from "../../assets/images/CatalogueImages/BathFittings__mockup.png";
+
 import DownloadButton from "../sub-components/DownloadButton";
 import { Link } from "react-router-dom";
+
 const BathFittings = ()=>{
 
     const faucet__products = [
-        { image: Bib_cock_BL3611, alt: "Bib_cock_BL3611", title: "BL3611" },
-        { image: Bib_cock_BL3616_A, alt: "Bib_cock_BL3616_A", title: "BL3616" },
-        { image: Bib_cock_BL3603, alt: "Bib_cock_BL3603", title: "BL3603" },
-        { image: Bib_cock_BL3607, alt: "Bib_cock_BL3607", title: "BL3607" },
-        { image: Bib_cock_BL3623_FU, alt: "Bib_cock_BL3623_FU", title: "BL3623 FU" },
-        { image: Bib_cock_BL3618, alt: "Bib_cock_BL3618", title: "BL3618" },
-        { image: Bib_cock_BL3601, alt: "Bib_cock_BL3601", title: "BL3601" },
-        { image: Bib_cock_BL3621_A, alt: "Bib_cock_BL3621_A", title: "BL3621 A" },
+        { image: Bib_cock_BL3611, alt: "Bib_cock_BL3611", title: "Pillar Cock" },
+        { image: Bib_cock_BL3616_A, alt: "Bib_cock_BL3616_A", title: "Diverter" },
+        { image: Bib_cock_BL3603, alt: "Bib_cock_BL3603", title: "Pillar Cock" },
+        { image: Bib_cock_BL3607, alt: "Bib_cock_BL3607", title: "Sink Cock" },
+        { image: Bib_cock_BL3623_FU, alt: "Bib_cock_BL3623_FU", title: "Flush Cock" },
+        { image: Bib_cock_BL3618, alt: "Bib_cock_BL3618", title: "Bathtub Spout" },
+        { image: Bib_cock_BL3601, alt: "Bib_cock_BL3601", title: "Bib Cock" },
+        { image: Bib_cock_BL3621_A, alt: "Bib_cock_BL3621_A", title: "Basin Mixer" },
     ];
 
     const shower__products = [
         { image: imageHS_06_10, alt: "head shower", title: "Hand Shower" },
-        { image: Over_Head_Shower, alt: "over head shower", title: "Head Shower" },
+        { image: Over_Head_Shower, alt: "over head shower", title: "Overhead Shower" },
     ];
       
 
@@ -50,7 +52,7 @@ const BathFittings = ()=>{
         { image: Towel_Rail_111, alt: "towel rail", title: "Towel Rail" },
         { image: Towel_Ring_110, alt: "towel ring", title: "Towel Ring" },
         { image: Soap_Dish_113, alt: "soap dish", title: "Soap Dish" },
-        { image: Bath_Grating_BG05, alt: "grating", title: "Grating" },
+        { image: Bath_Grating_BG05, alt: "grating", title: "Bath Grating" },
         { image: Soap_Dispenser_115, alt: "soap dispenser", title: "Soap Dispenser" },
     ];
     return(<>

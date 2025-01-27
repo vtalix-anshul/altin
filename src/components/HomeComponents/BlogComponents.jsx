@@ -23,7 +23,7 @@ const BlogComponents = ()=>{
                                 <h4 className="text-2xl">Why Indian Porcelain Tiles Are Capturing Global Attention!</h4>
                                 <p className="text-darkGray"> India has emerged as a global hub for porcelain tiles, thanks to its unparalleled craftsmanship, innovative designs, and competitive pricing. From intricate patterns to sleek modern aesthetics, Indian porcelain tiles are transforming homes and commercial spaces worldwide.</p>
                             </div>
-                            <Link to="/blog/1" className="text-lg">Know more</Link>
+                            <Link to="/blog/1" className="text-lg relative w-fit bottom__line">Know more</Link>
                         </div>
                     </div>
                     <div className="blog__card bg-white w-full max-w-[420px] rounded-3xl p-3 flex flex-col gap-6">
@@ -35,7 +35,7 @@ const BlogComponents = ()=>{
                                 <h4 className="text-2xl">Indian Ceramic Sanitary Ware: A Perfect Blend of Functionality and Style</h4>
                                 <p className="text-darkGray">India has long been celebrated for its rich craftsmanship and innovative manufacturing capabilities, and the ceramic sanitary ware industry is no exception. Combining functionality with impeccable style, Indian ceramic sanitary ware has gained global recognition for its quality, design, and versatility.</p>
                             </div>
-                            <Link to="/blog/2" className="text-lg">Know more</Link>
+                            <Link to="/blog/2" className="text-lg relative w-fit bottom__line">Know more</Link>
                         </div>
                     </div>
                     <div className="blog__card bg-white w-full max-w-[420px] rounded-3xl p-3 flex flex-col gap-6">
@@ -47,7 +47,7 @@ const BlogComponents = ()=>{
                                 <h4 className="text-2xl">Indian Bath Fittings: From Sleek Faucets to Luxurious Showers</h4>
                                 <p className="text-darkGray">In the world of interior design and construction, bath fittings play a crucial role in blending functionality with aesthetics. Over the years, India has emerged as a significant global player in the manufacturing and export of bath fittings, offering a wide range of products that cater to diverse preferences and needs.</p>
                             </div>
-                            <Link to="/blog/3" className="text-lg">Know more</Link>
+                            <Link to="/blog/3" className="text-lg relative w-fit bottom__line">Know more</Link>
                         </div>
                     </div>
                 </div>

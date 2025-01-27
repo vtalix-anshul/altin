@@ -74,7 +74,7 @@ const HomeBanner = ()=>{
                             </div>
                             <div>
                                 <div className={form__group}>
-                                    <button type="submit" className="text-lg underline">Submit</button>
+                                    <button type="submit" className="text-lg bottom__line relative border-b-2 border-black border-solid">Submit</button>
                                 </div>
                             </div>
                         </div>

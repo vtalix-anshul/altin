@@ -34,7 +34,7 @@ const HowWeWork = ()=>{
                         <div className="icon__content__div">
                             <div className="content__parent flex flex-col gap-3 md:text-right">
                                 <h6 className="text-xl">Customised Product Selection</h6>
-                                <p className="text-darkGray">Explore our diverse range of products, and we'll assist you in selecting the perfect options to meet your specifications.</p>
+                                <p className="text-darkGray">Explore our diverse range of products, and we&apos;ll assist you in selecting the perfect options to meet your specifications.</p>
                             </div>
                         </div>
                         <div className="icon__parent__div w-full  hidden md:flex justify-start">

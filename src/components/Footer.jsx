@@ -51,9 +51,9 @@ const Footer = ()=>{
                     <div className="first__links min-w-[120px] pt-4 md:pt-0">
                         <ul className="flex flex-col gap-4">
                             <li className="list__heading text-black2">Social</li>
-                            <li className="text-darkGray text-sm"><a className="text-darkGray hover:text-black" href="">Facebook</a></li>
-                            <li className="text-darkGray text-sm"><a className="text-darkGray hover:text-black" href="">Instagram</a></li>
-                            <li className="text-darkGray text-sm"><a className="text-darkGray hover:text-black" href="">Linkedin</a></li>
+                            <li className="text-darkGray text-sm"><a className="text-darkGray hover:text-black" target="_blank" href="https://www.facebook.com/people/Altin-Exports/100091200651671/">Facebook</a></li>
+                            <li className="text-darkGray text-sm"><a className="text-darkGray hover:text-black" target="_blank" href="https://www.instagram.com/altin_exports/">Instagram</a></li>
+                            <li className="text-darkGray text-sm"><a className="text-darkGray hover:text-black" target="_blank" href="https://www.linkedin.com/company/altinexports/?viewAsMember=true">Linkedin</a></li>
                         </ul>
                     </div>
                 </div>
