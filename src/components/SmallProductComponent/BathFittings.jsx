@@ -20,6 +20,8 @@ import Towel_Rack_112 from "../../assets/images/bath__fitting__images/Towel_Rack
 import Towel_Rail_111 from "../../assets/images/bath__fitting__images/Towel_Rail_111.png"
 import Towel_Ring_110 from "../../assets/images/bath__fitting__images/Towel_Ring_110.png"
 import Tumbler_Holder_114 from "../../assets/images/bath__fitting__images/Tumbler_Holder_114.png"
+import bidit__shower from "../../assets/images/bath__fitting__images/bidit_shower.png"
+import wall__mixer from "../../assets/images/bath__fitting__images/wall__mixer.png"
 import bath__fittings from "../../assets/images/CatalogueImages/BathFittings__mockup.png";
 
 import DownloadButton from "../sub-components/DownloadButton";
@@ -41,6 +43,8 @@ const BathFittings = ()=>{
     const shower__products = [
         { image: imageHS_06_10, alt: "head shower", title: "Hand Shower" },
         { image: Over_Head_Shower, alt: "over head shower", title: "Overhead Shower" },
+        { image: bidit__shower, alt: "Bidit Shower", title: "Bidit Shower" },
+        { image: wall__mixer, alt: "Wall Mixer", title: "Wall Mixer" },
     ];
       
 
@@ -85,7 +89,7 @@ const BathFittings = ()=>{
                                 <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
                                     {faucet__products.map((product, index)=>(
                                         <div key={index} className="card bg-lightGray rounded-3xl px-3 py-5 max-w-[400px] h-full max-h-[420px] flex flex-col gap-3 justify-center">
-                                            <div className="image__parent w-full  h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
+                                            <div className="image__parent w-full h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
                                                 <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
                                             </div>
                                             <div className="card__content  py-6 px-3 h-[20%]">
@@ -98,7 +102,7 @@ const BathFittings = ()=>{
                             <TabPanel className="flex gap-16 flex-col">
                                 <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
                                     {shower__products.map((product, index)=>(
-                                        <div key={index} className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
+                                        <div key={index} className="card bg-lightGray rounded-3xl p-3 max-w-[400px] max-h-[400px] flex flex-col gap-3">
                                             <div className="image__parent w-full h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
                                                 <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
                                             </div>
@@ -114,7 +118,7 @@ const BathFittings = ()=>{
                                     {accessories__product.map((product, index) => (
                                         <div
                                             key={index}
-                                            className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3"
+                                            className="card bg-lightGray rounded-3xl p-3 max-w-[400px] max-h-[400px] flex flex-col gap-3"
                                         >
                                             <div className="image__parent w-full h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
                                                 <img
@@ -145,7 +149,7 @@ const BathFittings = ()=>{
                             </div> 
                         </div>
                         <div className="w-full flex gap-6 flex-wrap justify-center">
-                            <Link to="/tiles" className="grid place-items-center rounded-full text-2xl md:max-w-[350px] lg:max-w-[500px] w-full h-[150px] hover:bg-lightGray border border-solid border-darkGray">Porcelian Tiles</Link>
+                            <Link to="/tiles" className="grid place-items-center rounded-full text-2xl md:max-w-[350px] lg:max-w-[500px] w-full h-[150px] hover:bg-lightGray border border-solid border-darkGray">Porcelain Tiles</Link>
                             <Link to="/sanitary" className="grid place-items-center rounded-full text-2xl md:max-w-[350px] lg:max-w-[500px] w-full h-[150px] hover:bg-lightGray border border-solid border-darkGray">Sanitary Wares</Link>
                         </div>
                     </div>

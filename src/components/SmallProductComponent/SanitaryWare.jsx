@@ -5,10 +5,44 @@ import altin__exports__panel__1 from "../../assets/images/altin__exports__panel_
 import altin__exports__panel__2 from "../../assets/images/altin__exports__panel__2.png"
 import altin__exports__panel__3 from "../../assets/images/altin__exports__panel__3.png"
 import altin__exports__panel__4 from "../../assets/images/altin__exports__panel__4.png"
+
+import EWC from "../../assets/images/sanitary__images/EWC.png";
+import floor__mounted from "../../assets/images/sanitary__images/floor__mounted.png";
+import flush__tank from "../../assets/images/sanitary__images/flush__tank.png";
+import full__pedastal from "../../assets/images/sanitary__images/full__pedastal.png";
+import one__piece__closet from "../../assets/images/sanitary__images/one__piece__closet.png";
+import p__trap from "../../assets/images/sanitary__images/p__trap.png";
+import table__top from "../../assets/images/sanitary__images/table__top.png";
+import wall__mounted from "../../assets/images/sanitary__images/wall__mounted.png";
+import urinal from "../../assets/images/sanitary__images/urinal.png";
+import wall__hung from "../../assets/images/sanitary__images/wall__hung.png";
+import toilet__seat__cover from "../../assets/images/sanitary__images/toilet__seat__cover.png"
+
+
 import sanitary__wares from "../../assets/images/CatalogueImages/SanitaryWaresMockups.png";
 import DownloadButton from "../sub-components/DownloadButton";
 import { Link } from "react-router-dom";
 const SanitaryWare = ()=>{
+
+    const closet__products = [
+        { image: one__piece__closet, alt: "One Piece Closet", title: "One Piece Closet"},
+        { image: wall__hung, alt: "Wall hung", title: "Wall hung"},
+        { image: floor__mounted, alt: "Floor Mounted", title: "Floor mounted"},
+        { image: EWC, alt: "EWC", title: "EWC"},
+    ];
+    
+    const basin__products = [
+        { image: table__top, alt: "Table Top", title: "Table Top"},
+        { image: wall__mounted, alt: "Wall Mounted", title: "Wall Mounted"},
+        { image: full__pedastal, alt: "Full Pedastal", title: "Full Pedastal"},
+    ];
+    
+    const accessories__product = [
+        { image:toilet__seat__cover, alt:"Toilet seat cover", title: "Toilet Seat Cover"},
+        { image: flush__tank, alt: "Flush tank", title: "Flush Tank"},
+        { image: p__trap, alt: "P Trap", title: "P trap"},
+    ];
+
     return(<>
         <div className="product__small__home__banner__2 h-dvh -mt-24 relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
@@ -37,212 +71,57 @@ const SanitaryWare = ()=>{
 
                         <TabPanels>
                             <TabPanel className="flex flex-col gap-16">
-                                <div className="flex gap-6 flex-wrap justify-center">
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
+                            <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
+                                    {closet__products.map((product, index)=>(
+                                        <div key={index} className="card bg-lightGray rounded-3xl px-3 py-5 max-w-[400px] h-full max-h-[420px] flex flex-col gap-3 justify-center">
+                                            <div className="image__parent w-full  h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
+                                                <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
+                                            </div>
+                                            <div className="card__content  py-6 px-3 h-[20%]">
+                                                <h3 className="text-2xl">{product.title}</h3>
+                                            </div>
                                         </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Wall Hung</h3>
+                                    ))}
+                                </div>
+                            </TabPanel>
+                            <TabPanel className="flex gap-16 flex-col">
+                                <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
+                                    {basin__products.map((product, index)=>(
+                                        <div key={index} className="card bg-lightGray rounded-3xl px-3 py-5 max-w-[400px] h-full max-h-[420px] flex flex-col gap-3 justify-center">
+                                            <div className="image__parent w-full  h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
+                                                <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
+                                            </div>
+                                            <div className="card__content  py-6 px-3 h-[20%]">
+                                                <h3 className="text-2xl">{product.title}</h3>
+                                            </div>
                                         </div>
+                                    ))}
+                                </div>
+                            </TabPanel>
+                            <TabPanel className="flex gap-16 flex-col">
+                                <div className="card bg-lightGray rounded-3xl px-3 py-5 max-w-[400px] h-full flex flex-col gap-3 justify-center">
+                                    <div className="image__parent w-full  h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
+                                        <img src={urinal} alt={urinal} loading="lazy" className="rounded-3xl object-contain"/>
                                     </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Wall Hung</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Wall Hung</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Wall Hung</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Wall Hung</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__1} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Wall Hung</h3>
-                                        </div>
+                                    <div className="card__content  py-6 px-3 h-[20%]">
+                                        <h3 className="text-2xl">Urinal</h3>
                                     </div>
                                 </div>
                             </TabPanel>
                             <TabPanel className="flex gap-16 flex-col">
-                                <div className="flex gap-6 flex-wrap justify-center">
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__2} alt="" className="rounded-3xl"/>
+                                
+                            <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
+                                {accessories__product.map((product, index)=>(
+                                    <div key={index} className="card bg-lightGray rounded-3xl px-3 py-5 max-w-[400px] h-full max-h-[420px] flex flex-col gap-3 justify-center">
+                                        <div className="image__parent w-full  h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
+                                            <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
                                         </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Basin</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__2} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Basin</h3>
+                                        <div className="card__content  py-6 px-3 h-[20%]">
+                                            <h3 className="text-2xl">{product.title}</h3>
                                         </div>
                                     </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__2} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Basin</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__2} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Basin</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__2} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Basin</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__2} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Basin</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel className="flex gap-16 flex-col">
-                                <div className="flex gap-6 flex-wrap justify-center">
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__3} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Urinal</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__3} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Urinal</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__3} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Urinal</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__3} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Urinal</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__3} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Urinal</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__3} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Urinal</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel className="flex gap-16 flex-col">
-                                <div className="flex gap-6 justify-center flex-wrap">
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
-                                        </div>
-                                    </div>
-                                    <div className="card bg-lightGray rounded-3xl p-3 max-w-[400px] flex flex-col gap-3">
-                                        <div className="image__parent w-full">
-                                            <img src={altin__exports__panel__4} alt="" className="rounded-3xl"/>
-                                        </div>
-                                        <div className="card__content py-6 px-3">
-                                            <h3 className="text-2xl">Accessories</h3>
-                                        </div>
-                                    </div>
-                                </div>
+                                ))}
+                            </div>
                             </TabPanel> 
                         </TabPanels>
 
@@ -259,7 +138,7 @@ const SanitaryWare = ()=>{
                         </div>
 
                         <div className="w-full flex gap-6 flex-wrap justify-center">
-                            <Link to="/tiles" className="grid place-items-center rounded-full text-2xl md:max-w-[350px] lg:max-w-[500px] w-full h-[150px] hover:bg-lightGray border border-solid border-darkGray">Porcelian Tiles</Link>
+                            <Link to="/tiles" className="grid place-items-center rounded-full text-2xl md:max-w-[350px] lg:max-w-[500px] w-full h-[150px] hover:bg-lightGray border border-solid border-darkGray">Porcelain Tiles</Link>
                             <Link to="/bath-fittings" className="grid place-items-center rounded-full text-2xl md:max-w-[350px] lg:max-w-[500px] w-full h-[150px] hover:bg-lightGray border border-solid border-darkGray">Bath Fittings</Link>
                         </div>
                     </div>

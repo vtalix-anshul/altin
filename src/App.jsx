@@ -124,7 +124,7 @@ function App() {
           <a
             target="_blank"
             href="https://wa.me/+918488884599"
-            className="block bg-darkGray rounded-full w-16 h-16"
+            className="block bg-darkGray rounded-full w-14 h-14"
             rel="noreferrer"
           >
             <img src={whatsapp__image} alt="WhatsApp" className="w-full h-full" />
@@ -133,7 +133,7 @@ function App() {
           {showScrollButton && (
             <button
               onClick={scrollToTop}
-              className="w-16 h-16 bg-darkGray rounded-full"
+              className="w-14 h-14 bg-darkGray rounded-full block"
             >
               <img src={scroll__top} alt="Scroll to Top" className="w-full h-full" />
             </button>

@@ -43,7 +43,7 @@ const Footer = ()=>{
                     <div className="first__links min-w-[120px] pt-4 md:pt-0">
                         <ul className="flex flex-col gap-4">
                             <li className="list__heading text-black2">Products</li>
-                            <li className="text-darkGray text-sm"><Link className="text-darkGray hover:text-black" to="/tiles" >Ceramic Tiles</Link></li>
+                            <li className="text-darkGray text-sm"><Link className="text-darkGray hover:text-black" to="/tiles" >Porcelain Tiles</Link></li>
                             <li className="text-darkGray text-sm"><Link className="text-darkGray hover:text-black" to="/sanitary" >Sanitary Wares</Link></li>
                             <li className="text-darkGray text-sm"><Link className="text-darkGray hover:text-black" to="/bath-fittings" >Bath Fittings</Link></li>
                         </ul>

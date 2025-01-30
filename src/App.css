@@ -13,13 +13,13 @@
     background-size: cover;
 }
 .collections__banner__1{
-    background-image: url("./assets/images/altin__exports__panel__1.png");
+    background-image: url("./assets/images/porcelian__tiles__banner.png");
 }
 .collections__banner__2{
-    background-image: url("./assets/images/altin__exports__panel__2.png");
+    background-image: url("./assets/images/sanitary__wares__banner.png");
 }
 .collections__banner__3{
-    background-image: url("./assets/images/altin__exports__panel__3.png");
+    background-image: url("./assets/images/bath__fittings__banner.png");
 }
 
 .about__home__banner{
@@ -48,31 +48,31 @@
     -o-transition: all ease-in-out 0.3s;
 }
 .collection__parent__1:hover{
-    background-image:url("./assets/images/altin__exports__panel__1.png");
+    background-image:url("./assets/images/porcelian__tiles__banner.png");
 }
 .collection__parent__2:hover{
-    background-image:url("./assets/images/altin__exports__panel__3.png");
+    background-image:url("./assets/images/sanitary__wares__banner.png");
 }
 .collection__parent__3:hover{
-    background-image:url("./assets/images/altin__exports__panel__2.png");
+    background-image:url("./assets/images/bath__fittings__banner.png");
 }
 
 .product__small__home__banner__1{
-    background-image:url("./assets/images/altin__exports__panel__1.png");
+    background-image:url("./assets/images/porcelian__tiles__banner.png");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .product__small__home__banner__2{
-    background-image:url("./assets/images/altin__exports__panel__2.png");
+    background-image:url("./assets/images/sanitary__wares__banner.png");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .product__small__home__banner__3{
-    background-image:url("./assets/images/bath__fitting__banner.png");
+    background-image:url("./assets/images/bath__fittings__banner.png");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;    

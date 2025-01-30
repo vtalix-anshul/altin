@@ -80,9 +80,9 @@ const Tiles = ()=>{
                         <TabPanels className={`py-12`}>
                             <TabPanel className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4">
                                 {tiles__600x800.map((card, index)=>(
-                                    <div key={index} className="card flex flex-col p-3">
+                                    <div key={index} className="card flex flex-col p-3 items-center">
                                         <div className="img__parent">
-                                            <img src={card.image} alt={card.alt} loading="lazy"/> 
+                                            <img src={card.image} alt={card.alt} loading="lazy" className="p-4"/> 
                                         </div>
                                         <div className="button__parent text-center">
                                             <p className="text-2xl">{card.title}</p>
@@ -93,7 +93,7 @@ const Tiles = ()=>{
                             </TabPanel> 
                             <TabPanel className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4">
                                 {tiles__800x1600.map((card,index)=>(
-                                    <div key={index} className="card flex flex-col p-3">
+                                    <div key={index} className="card flex flex-col p-3 items-center">
                                         <div className="img__parent">
                                             <img src={card.image} alt={card.alt} /> 
                                         </div>
