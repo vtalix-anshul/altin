@@ -1,10 +1,4 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import arrow__down from "../../assets/images/arrow__down.png";
-import book__image from "../../assets/images/book__image.jpeg";
-import altin__exports__panel__1 from "../../assets/images/altin__exports__panel__1.png"
-import altin__exports__panel__2 from "../../assets/images/altin__exports__panel__2.png"
-import altin__exports__panel__3 from "../../assets/images/altin__exports__panel__3.png"
-import altin__exports__panel__4 from "../../assets/images/altin__exports__panel__4.png"
 
 import EWC from "../../assets/images/sanitary__images/EWC.png";
 import floor__mounted from "../../assets/images/sanitary__images/floor__mounted.png";
@@ -17,11 +11,14 @@ import wall__mounted from "../../assets/images/sanitary__images/wall__mounted.pn
 import urinal from "../../assets/images/sanitary__images/urinal.png";
 import wall__hung from "../../assets/images/sanitary__images/wall__hung.png";
 import toilet__seat__cover from "../../assets/images/sanitary__images/toilet__seat__cover.png"
+import half__one__piece from "../../assets/images/sanitary__images/half__one__piece.png"
+import half__pedastal from "../../assets/images/sanitary__images/half__pedastal.png"
 
 
 import sanitary__wares from "../../assets/images/CatalogueImages/SanitaryWaresMockups.png";
 import DownloadButton from "../sub-components/DownloadButton";
 import { Link } from "react-router-dom";
+import ScrollDownButton from "../ScrollDownButton";
 const SanitaryWare = ()=>{
 
     const closet__products = [
@@ -35,6 +32,8 @@ const SanitaryWare = ()=>{
         { image: table__top, alt: "Table Top", title: "Table Top"},
         { image: wall__mounted, alt: "Wall Mounted", title: "Wall Mounted"},
         { image: full__pedastal, alt: "Full Pedastal", title: "Full Pedastal"},
+        { image: half__pedastal, alt: "Half Pedastal", title: "Half Pedastal"},
+        { image: half__one__piece, alt: "Half One Piece", title: "Half One Piece"},
     ];
     
     const accessories__product = [
@@ -46,16 +45,14 @@ const SanitaryWare = ()=>{
     return(<>
         <div className="product__small__home__banner__2 h-dvh -mt-24 relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
-                <h4 className="text-2xl">COLLECTIONS</h4>
+                <h4 className="text-2xl">SANITARY WARES</h4>
                 <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Diverse collectins for <br /> global markets</h1>
             </div>
             <div className="absolute flex justify-center w-full bottom-16">
-                <button className="">
-                    <img src={arrow__down} alt="" />
-                </button>
+                <ScrollDownButton targetId={"sanitary__section"} />
             </div>
         </div>
-        <div className="catalouge__main__parent pt-44">
+        <div className="catalouge__main__parent pt-44" id="sanitary__section">
             <div className="container px-4 md:px-8 xl:px-16">
                 <TabGroup>
                     <div className="heading flex flex-col items-center justify-center gap-8">
@@ -78,7 +75,7 @@ const SanitaryWare = ()=>{
                                                 <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
                                             </div>
                                             <div className="card__content  py-6 px-3 h-[20%]">
-                                                <h3 className="text-2xl">{product.title}</h3>
+                                                <h3 className="text-2xl bottom__line relative w-fit">{product.title}</h3>
                                             </div>
                                         </div>
                                     ))}
@@ -92,7 +89,7 @@ const SanitaryWare = ()=>{
                                                 <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
                                             </div>
                                             <div className="card__content  py-6 px-3 h-[20%]">
-                                                <h3 className="text-2xl">{product.title}</h3>
+                                                <h3 className="text-2xl bottom__line relative w-fit">{product.title}</h3>
                                             </div>
                                         </div>
                                     ))}
@@ -104,7 +101,7 @@ const SanitaryWare = ()=>{
                                         <img src={urinal} alt={urinal} loading="lazy" className="rounded-3xl object-contain"/>
                                     </div>
                                     <div className="card__content  py-6 px-3 h-[20%]">
-                                        <h3 className="text-2xl">Urinal</h3>
+                                        <h3 className="text-2xl bottom__line relative w-fit">Urinal</h3>
                                     </div>
                                 </div>
                             </TabPanel>
@@ -113,11 +110,11 @@ const SanitaryWare = ()=>{
                             <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
                                 {accessories__product.map((product, index)=>(
                                     <div key={index} className="card bg-lightGray rounded-3xl px-3 py-5 max-w-[400px] h-full max-h-[420px] flex flex-col gap-3 justify-center">
-                                        <div className="image__parent w-full  h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
+                                        <div className="image__parent w-full  h-[80%] flex justify-center bg-[#FDFDFD] p-3 px-5 rounded-3xl">
                                             <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
                                         </div>
                                         <div className="card__content  py-6 px-3 h-[20%]">
-                                            <h3 className="text-2xl">{product.title}</h3>
+                                            <h3 className="text-2xl bottom__line relative w-fit">{product.title}</h3>
                                         </div>
                                     </div>
                                 ))}
@@ -148,4 +145,4 @@ const SanitaryWare = ()=>{
     </>);
 }
 
-export default SanitaryWare;book__image
+export default SanitaryWare;

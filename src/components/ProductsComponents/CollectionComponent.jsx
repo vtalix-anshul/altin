@@ -3,7 +3,7 @@ import arrow__down from "../../assets/images/arrow-right.svg";
 
 const CollectionComponent = ()=>{
     return (<>
-        <div className="collection__component__parent py-20">
+        <div className="collection__component__parent py-20" id="products__collection">
             <div className="container grid gird-cols-1 lg:grid-cols-[30%_70%] px-4 gap-6">
                 <div className="collection__heading">
                     <h3 className="text-5xl mb-4 font-semibold">Our Collections</h3>

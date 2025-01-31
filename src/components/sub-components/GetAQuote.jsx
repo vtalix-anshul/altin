@@ -18,7 +18,7 @@ const GetAQuote = ()=>{
 
     return (<>
         <div className="text-lg text-white">
-            <button className="btn bg-orange -px-2 -py-2 text-base sm:text-lg" onClick={()=>setIsOpen(true)}>Get a Quote</button>
+            <button className="btn bg-orange -px-2 -py-2 text-base sm:text-lg hover:bg-white hover:text-orange transition-all duration-200" onClick={()=>setIsOpen(true)}>Get a Quote</button>
         </div>
         <Dialog open={isOpen} onClose={()=>setIsOpen(false)} className={`bg-red-900 w-screen h-screen z-[999]`}>
         <DialogBackdrop transition

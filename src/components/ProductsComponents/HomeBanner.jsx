@@ -1,4 +1,4 @@
-import arrow__down from "../../assets/images/arrow__down.png";
+import ScrollDownButton from "../ScrollDownButton";
 const HomeBanner = ()=>{
     return(<>
         <div className="product__home__banner h-dvh -mt-24 relative grid items-center">
@@ -8,7 +8,7 @@ const HomeBanner = ()=>{
             </div>
             <div className="absolute flex justify-center w-full bottom-16">
                 <button className="">
-                    <img src={arrow__down} alt="" />
+                    <ScrollDownButton targetId={"products__collection"} />
                 </button>
             </div>
         </div>

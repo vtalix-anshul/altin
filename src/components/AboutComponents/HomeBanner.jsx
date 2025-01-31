@@ -1,5 +1,5 @@
-import arrow__down from "../../assets/images/arrow__down.png";
 import second__image from "../../assets/images/altin__exports__about__page.png";
+import ScrollDownButton from "../ScrollDownButton";
 
 const HomeBanner = ()=>{
     return (<>
@@ -10,12 +10,10 @@ const HomeBanner = ()=>{
                 Quality, and Global Excellence</h1>
             </div>
             <div className="absolute flex justify-center w-full bottom-16">
-                <button className="">
-                    <img src={arrow__down} alt="" />
-                </button>
+                <ScrollDownButton targetId={"about__section__2"} />
             </div>
         </div>
-        <div className="">
+        <div className="" id="about__section__2">
             <div className="px-4 py-24 lg:py-44 lg:px-16 container grid grid-cols-1 gap-16 items-center">
                 <div className="about_information__parent flex flex-col gap-10 md:gap-16">
                     <div className="main__heading text-center w-full">

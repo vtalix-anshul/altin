@@ -4,7 +4,7 @@ import arrow__down from "../../assets/images/arrow__down.png";
 import Bath_Grating_BG05 from "../../assets/images/bath__fitting__images/Bath_Grating_BG05.png"
 import Bib_cock_BL3618 from "../../assets/images/bath__fitting__images/Bib_cock_BL3618.png"
 import Bib_cock_BL3601 from "../../assets/images/bath__fitting__images/Bib_cock_BL3601.png"
-import Bib_cock_BL3603 from "../../assets/images/bath__fitting__images/Bib_cock_BL3603.png"
+// import Bib_cock_BL3603 from "../../assets/images/bath__fitting__images/Bib_cock_BL3603.png"
 import Bib_cock_BL3607 from "../../assets/images/bath__fitting__images/Bib_cock_BL3607.png"
 import Bib_cock_BL3611 from "../../assets/images/bath__fitting__images/Bib_cock_BL3611.png"
 import Bib_cock_BL3616_A from "../../assets/images/bath__fitting__images/Bib_cock_BL3616_A.png"
@@ -26,25 +26,26 @@ import bath__fittings from "../../assets/images/CatalogueImages/BathFittings__mo
 
 import DownloadButton from "../sub-components/DownloadButton";
 import { Link } from "react-router-dom";
+import ScrollDownButton from "../ScrollDownButton";
 
 const BathFittings = ()=>{
 
     const faucet__products = [
+        { image: Bib_cock_BL3601, alt: "Bib_cock_BL3601", title: "Bib Cock" },
         { image: Bib_cock_BL3611, alt: "Bib_cock_BL3611", title: "Pillar Cock" },
-        { image: Bib_cock_BL3616_A, alt: "Bib_cock_BL3616_A", title: "Diverter" },
-        { image: Bib_cock_BL3603, alt: "Bib_cock_BL3603", title: "Pillar Cock" },
+        { image: wall__mixer, alt: "Wall Mixer", title: "Wall Mixer" },
         { image: Bib_cock_BL3607, alt: "Bib_cock_BL3607", title: "Sink Cock" },
         { image: Bib_cock_BL3623_FU, alt: "Bib_cock_BL3623_FU", title: "Flush Cock" },
         { image: Bib_cock_BL3618, alt: "Bib_cock_BL3618", title: "Bathtub Spout" },
-        { image: Bib_cock_BL3601, alt: "Bib_cock_BL3601", title: "Bib Cock" },
         { image: Bib_cock_BL3621_A, alt: "Bib_cock_BL3621_A", title: "Basin Mixer" },
+        { image: Bib_cock_BL3616_A, alt: "Bib_cock_BL3616_A", title: "Diverter" },
+        // { image: Bib_cock_BL3603, alt: "Bib_cock_BL3603", title: "Pillar Cock" },
     ];
 
     const shower__products = [
         { image: imageHS_06_10, alt: "head shower", title: "Hand Shower" },
         { image: Over_Head_Shower, alt: "over head shower", title: "Overhead Shower" },
         { image: bidit__shower, alt: "Bidit Shower", title: "Bidit Shower" },
-        { image: wall__mixer, alt: "Wall Mixer", title: "Wall Mixer" },
     ];
       
 
@@ -62,16 +63,14 @@ const BathFittings = ()=>{
     return(<>
         <div className="product__small__home__banner__3 h-dvh -mt-24 relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
-                <h4 className="text-2xl">COLLECTIONS</h4>
+                <h4 className="text-2xl">BATH FITTINGS</h4>
                 <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Diverse collectins for <br /> global markets</h1>
             </div>
             <div className="absolute flex justify-center w-full bottom-16">
-                <button className="">
-                    <img src={arrow__down} alt="" />
-                </button>
+                <ScrollDownButton targetId={"bath__fitting__section"} />
             </div>
         </div>
-        <div className="catalouge__main__parent pt-44">
+        <div className="catalouge__main__parent pt-44" id="bath__fitting__section">
             <div className="container px-4 md:px-8 xl:px-16">
                 <TabGroup>
                     <div className="heading flex flex-col items-center justify-center gap-8">
@@ -93,7 +92,7 @@ const BathFittings = ()=>{
                                                 <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
                                             </div>
                                             <div className="card__content  py-6 px-3 h-[20%]">
-                                                <h3 className="text-2xl">{product.title}</h3>
+                                                <h3 className="text-2xl bottom__line relative w-fit">{product.title}</h3>
                                             </div>
                                         </div>
                                     ))}
@@ -107,7 +106,7 @@ const BathFittings = ()=>{
                                                 <img src={product.image} alt={product.alt} loading="lazy" className="rounded-3xl object-contain"/>
                                             </div>
                                             <div className="card__content  py-6 px-3 h-[20%]">
-                                                <h3 className="text-2xl">{product.title}</h3>
+                                                <h3 className="text-2xl bottom__line relative w-fit">{product.title}</h3>
                                             </div>
                                         </div>
                                     ))}
@@ -129,7 +128,7 @@ const BathFittings = ()=>{
                                                 />
                                             </div>
                                             <div className="card__content py-6 px-3 h-[20%]">
-                                                <h3 className="text-2xl">{product.title}</h3>
+                                                <h3 className="text-2xl bottom__line relative w-fit">{product.title}</h3>
                                             </div>
                                         </div>
                                     ))}

@@ -1,7 +1,5 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 
-//importing images
-import arrow__down from "../../assets/images/arrow__down.png";
 
 // images of 600x1200
 import glossy from "../../assets/images/CatalogueImages/Glossy_Series.png";
@@ -28,6 +26,7 @@ import endless__800x1600 from "../../assets/images/CatalogueImages/Endless__800x
 
 import DownloadButton from "../sub-components/DownloadButton";
 import { Link } from "react-router-dom";
+import ScrollDownButton from "../ScrollDownButton";
 
 const Tiles = ()=>{
     const tiles__800x1600 = [
@@ -57,16 +56,14 @@ const Tiles = ()=>{
     return (<>
         <div className="product__small__home__banner__1 h-dvh -mt-24 relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
-                <h4 className="text-2xl">COLLECTIONS</h4>
+                <h4 className="text-2xl">PORCELAIN TILES</h4>
                 <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Diverse collectins for <br /> global markets</h1>
             </div>
             <div className="absolute flex justify-center w-full bottom-16">
-                <button className="">
-                    <img src={arrow__down} alt="" />
-                </button>
+                <ScrollDownButton targetId={"tiles__section"} />
             </div>
         </div>
-        <div className="catalouge__main__parent pt-44">
+        <div className="catalouge__main__parent pt-44" id="tiles__section">
             <div className="container px-4 md:px-8 xl:px-16">
                 <TabGroup>
                     <div className="heading flex flex-col items-center justify-center gap-8">

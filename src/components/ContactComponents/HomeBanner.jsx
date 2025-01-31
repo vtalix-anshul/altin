@@ -1,4 +1,4 @@
-import arrow__down from "../../assets/images/arrow__down.png";
+import ScrollDownButton from "../ScrollDownButton";
 
 const HomeBanner = ()=>{
     const form__row = `w-full pb-8 flex gap-6 flex-col sm:flex-row`;
@@ -13,12 +13,10 @@ const HomeBanner = ()=>{
                 <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Don&apos;t be shy</h1>
             </div>
             <div className="absolute flex justify-center w-full bottom-16">
-                <button className="">
-                    <img src={arrow__down} alt="" />
-                </button>
+                <ScrollDownButton targetId={"contact__form"} />
             </div>
         </div>
-        <div className="">
+        <div className="" id="contact__form">
             <div className="px-4 py-24 lg:py-44 lg:px-16 container grid grid-cols-1 gap-16 items-center">
                 <div className="grid grid-cols-1 md:grid-cols-[50%_50%] lg:grid-cols-[40%_60%] gap-6 md:gap-3">
                     <div className="contact__heading px-4 h-full flex flex-col justify-between">
