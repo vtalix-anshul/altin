@@ -13,6 +13,7 @@ import wall__hung from "../../assets/images/sanitary__images/wall__hung.png";
 import toilet__seat__cover from "../../assets/images/sanitary__images/toilet__seat__cover.png"
 import half__one__piece from "../../assets/images/sanitary__images/half__one__piece.png"
 import half__pedastal from "../../assets/images/sanitary__images/half__pedastal.png"
+import one__piece__fittings from "../../assets/images/sanitary__images/one__piece__fittings.jpg"
 
 
 import sanitary__wares from "../../assets/images/CatalogueImages/SanitaryWaresMockups.png";
@@ -37,6 +38,7 @@ const SanitaryWare = ()=>{
     ];
     
     const accessories__product = [
+        { image:one__piece__fittings, alt:"One Piece Fittings", title:"One Piece Fittings"},
         { image:toilet__seat__cover, alt:"Toilet seat cover", title: "Toilet Seat Cover"},
         { image: flush__tank, alt: "Flush tank", title: "Flush Tank"},
         { image: p__trap, alt: "P Trap", title: "P trap"},

@@ -1,10 +1,9 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import arrow__down from "../../assets/images/arrow__down.png";
 
 import Bath_Grating_BG05 from "../../assets/images/bath__fitting__images/Bath_Grating_BG05.png"
 import Bib_cock_BL3618 from "../../assets/images/bath__fitting__images/Bib_cock_BL3618.png"
 import Bib_cock_BL3601 from "../../assets/images/bath__fitting__images/Bib_cock_BL3601.png"
-// import Bib_cock_BL3603 from "../../assets/images/bath__fitting__images/Bib_cock_BL3603.png"
+import Bib_cock_BL3603 from "../../assets/images/bath__fitting__images/Bib_cock_BL3603.png"
 import Bib_cock_BL3607 from "../../assets/images/bath__fitting__images/Bib_cock_BL3607.png"
 import Bib_cock_BL3611 from "../../assets/images/bath__fitting__images/Bib_cock_BL3611.png"
 import Bib_cock_BL3616_A from "../../assets/images/bath__fitting__images/Bib_cock_BL3616_A.png"
@@ -32,20 +31,20 @@ const BathFittings = ()=>{
 
     const faucet__products = [
         { image: Bib_cock_BL3601, alt: "Bib_cock_BL3601", title: "Bib Cock" },
-        { image: Bib_cock_BL3611, alt: "Bib_cock_BL3611", title: "Pillar Cock" },
-        { image: wall__mixer, alt: "Wall Mixer", title: "Wall Mixer" },
+        { image: Bib_cock_BL3603, alt: "Bib_cock_BL3603", title: "Pillar Cock" },
+        { image: Bib_cock_BL3611, alt: "Bib_cock_BL3611", title: "Wall Mixer" },
         { image: Bib_cock_BL3607, alt: "Bib_cock_BL3607", title: "Sink Cock" },
         { image: Bib_cock_BL3623_FU, alt: "Bib_cock_BL3623_FU", title: "Flush Cock" },
         { image: Bib_cock_BL3618, alt: "Bib_cock_BL3618", title: "Bathtub Spout" },
         { image: Bib_cock_BL3621_A, alt: "Bib_cock_BL3621_A", title: "Basin Mixer" },
         { image: Bib_cock_BL3616_A, alt: "Bib_cock_BL3616_A", title: "Diverter" },
-        // { image: Bib_cock_BL3603, alt: "Bib_cock_BL3603", title: "Pillar Cock" },
     ];
-
+    
     const shower__products = [
+        { image: wall__mixer, alt: "Wall Mixer", title: "Wall Mixer" },
         { image: imageHS_06_10, alt: "head shower", title: "Hand Shower" },
         { image: Over_Head_Shower, alt: "over head shower", title: "Overhead Shower" },
-        { image: bidit__shower, alt: "Bidit Shower", title: "Bidit Shower" },
+        { image: bidit__shower, alt: "Bidit Shower", title: "Bidet Shower (Health Faucet)" },
     ];
       
 

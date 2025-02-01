@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import first__blog from "../../assets/images/altin__exports__panel__1.png";
-import second__blog from "../../assets/images/altin__exports__panel__1.png";
-import third__blog from "../../assets/images/altin__exports__panel__1.png";
+import first__blog from "../../assets/images/blog__1.png";
+import second__blog from "../../assets/images/blog__2.png";
+import third__blog from "../../assets/images/blog__3.png";
 const BlogComponents = ()=>{
     return (<>
         <div className="blog__component__parent py-44  bg-lightGray">
