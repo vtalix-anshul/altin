@@ -72,7 +72,7 @@ const GetAQuote = ()=>{
                                 </div><div className={form__group}>
                                     <label htmlFor="topic" className={form__label}>Product</label>
                                     <div className={input__parent}>
-                                        <input type="text" id="product" name="product" placeholder="Inquire product" className={form__input}/>
+                                        <input type="text" id="product" name="product" placeholder="Required product" className={form__input}/>
                                     </div>
                                 </div>
                             </div>

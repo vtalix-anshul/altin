@@ -38,17 +38,17 @@ const SanitaryWare = ()=>{
     ];
     
     const accessories__product = [
-        { image:one__piece__fittings, alt:"One Piece Fittings", title:"One Piece Fittings"},
         { image:toilet__seat__cover, alt:"Toilet seat cover", title: "Toilet Seat Cover"},
         { image: flush__tank, alt: "Flush tank", title: "Flush Tank"},
         { image: p__trap, alt: "P Trap", title: "P trap"},
+        { image:one__piece__fittings, alt:"One Piece Fittings", title:"One Piece Fittings"},
     ];
 
     return(<>
         <div className="product__small__home__banner__2 h-dvh -mt-24 relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
                 <h4 className="text-2xl">SANITARY WARES</h4>
-                <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Diverse collectins for <br /> global markets</h1>
+                <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Diverse collections for <br /> global markets</h1>
             </div>
             <div className="absolute flex justify-center w-full bottom-16">
                 <ScrollDownButton targetId={"sanitary__section"} />

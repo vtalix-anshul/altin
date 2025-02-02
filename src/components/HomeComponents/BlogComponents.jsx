@@ -14,7 +14,7 @@ const BlogComponents = ()=>{
                     </div>
                 </div>
                 <div className="blog__section flex flex-wrap gap-6 justify-center">
-                    <div className="blog__card bg-white w-full max-w-[420px] rounded-3xl p-3 flex flex-col gap-6">
+                    <div className="blog__card bg-white w-full max-w-[380px] rounded-3xl p-3 flex flex-col gap-6">
                         <div className="blog__card__image w-full">
                             <img src={first__blog} alt="" className="rounded-2xl object-cover" />
                         </div>
@@ -26,7 +26,7 @@ const BlogComponents = ()=>{
                             <Link to="/blog/1" className="text-lg relative w-fit bottom__line">Know more</Link>
                         </div>
                     </div>
-                    <div className="blog__card bg-white w-full max-w-[420px] rounded-3xl p-3 flex flex-col gap-6">
+                    <div className="blog__card bg-white w-full max-w-[380px] rounded-3xl p-3 flex flex-col gap-6">
                         <div className="blog__card__image w-full">
                             <img src={second__blog} alt="" className="rounded-2xl object-cover" />
                         </div>
@@ -38,7 +38,7 @@ const BlogComponents = ()=>{
                             <Link to="/blog/2" className="text-lg relative w-fit bottom__line">Know more</Link>
                         </div>
                     </div>
-                    <div className="blog__card bg-white w-full max-w-[420px] rounded-3xl p-3 flex flex-col gap-6">
+                    <div className="blog__card bg-white w-full max-w-[380px] rounded-3xl p-3 flex flex-col gap-6">
                         <div className="blog__card__image w-full">
                             <img src={third__blog} alt="" className="rounded-2xl object-cover" />
                         </div>

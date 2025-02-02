@@ -11,7 +11,7 @@ const GlobalMaps = ()=>{
                 <div className="partner__parent_div pt-10 flex flex-col md:flex-row md:justify-between">
                     <div className="left__div w-full flex flex-col gap-4">
                         <h5 className="text-2xl md:text-5xl font-semibold">Our Reach</h5>
-                        <p className="text-darkGray">For many years, we have been transforming homes worldwide. With our products shipped to over 3 continents and 20 countries, we are known for delivering quality and luxury across borders.</p>
+                        <p className="text-darkGray">For many years, we have been transforming spaces worldwide. With our products shipped to over 3 continents and 15 countries, we are known for delivering quality and luxury across borders.</p>
                     </div>
                     <div className="right__div w-full md:px-2 lg:px-16">
                         <div className="reach__partners__card__parent flex flex-col sm:flex-row gap-4 md:gap-8 lg:gap-16 py-8 md:py-0">

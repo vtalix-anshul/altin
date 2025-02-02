@@ -67,7 +67,7 @@ const Blog3 = ()=>{
                             <p className="py-1 px-4">Indian bath fittings strike the perfect balance between luxury and affordability. Customers can access high-quality products with world-class designs at prices that are significantly lower than many global competitors.</p>
                         </li>
                         <li className="text-lg py-3">
-                            <h6 className="font-bold text-xl">5. Ico-friendly Innovations</h6>
+                            <h6 className="font-bold text-xl">5. Eco-friendly Innovations</h6>
                             <p className="py-1 px-4">Sustainability is at the core of Indian bath fittings. Manufacturers are incorporating water-saving technologies such as aerators in faucets and flow regulators in showers. These innovations help reduce water wastage without compromising on performance, making them ideal for eco-conscious consumers and businesses.</p>
                         </li>
                     </ul>

@@ -30,8 +30,8 @@ import ScrollDownButton from "../ScrollDownButton";
 const BathFittings = ()=>{
 
     const faucet__products = [
-        { image: Bib_cock_BL3601, alt: "Bib_cock_BL3601", title: "Bib Cock" },
         { image: Bib_cock_BL3603, alt: "Bib_cock_BL3603", title: "Pillar Cock" },
+        { image: Bib_cock_BL3601, alt: "Bib_cock_BL3601", title: "Bib Cock" },
         { image: Bib_cock_BL3611, alt: "Bib_cock_BL3611", title: "Wall Mixer" },
         { image: Bib_cock_BL3607, alt: "Bib_cock_BL3607", title: "Sink Cock" },
         { image: Bib_cock_BL3623_FU, alt: "Bib_cock_BL3623_FU", title: "Flush Cock" },
@@ -63,7 +63,7 @@ const BathFittings = ()=>{
         <div className="product__small__home__banner__3 h-dvh -mt-24 relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
                 <h4 className="text-2xl">BATH FITTINGS</h4>
-                <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Diverse collectins for <br /> global markets</h1>
+                <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Diverse collections for <br /> global markets</h1>
             </div>
             <div className="absolute flex justify-center w-full bottom-16">
                 <ScrollDownButton targetId={"bath__fitting__section"} />

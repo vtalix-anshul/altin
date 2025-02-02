@@ -9,20 +9,16 @@ const Blog2 = ()=>{
             </div>
             <div className="blog__info px-4 text-lg">
                 <p>
-                India has long been celebrated for its rich craftsmanship and innovative manufacturing capabilities, and the ceramic sanitary ware industry is no exception. Combining functionality with impeccable style, Indian ceramic sanitary ware has gained global recognition for its quality, design, and versatility. Whether i&apos;s for residential or commercial spaces, Indian sanitary ware products deliver a seamless fusion of utility and aesthetics, making them a preferred choice for modern interiors worldwide.</p>
+                India has long been celebrated for its rich craftsmanship and innovative manufacturing capabilities, and the ceramic sanitary ware industry is no exception. Combining functionality with impeccable style, Indian ceramic sanitary ware has gained global recognition for its quality, design, and versatility. Whether it&apos;s for residential or commercial spaces, Indian sanitary ware products deliver a seamless fusion of utility and aesthetics, making them a preferred choice for modern interiors worldwide.</p>
             </div>
             <div className="blog__content px-4 flex flex-col gap-5 text-lg">
-                <div className="blog__content__child py-6 flex flex-col gap-4">
-                    <h2 className="font-semibold text-2xl">A Revolution in Bath Fittings</h2>
-                    <p>Indian manufacturers have redefined bath fittings by combining traditional craftsmanship with cutting-edge technology. The result? A product range that is not only visually stunning but also practical and durable. Whether it&apos;s for modern homes, hotels, or commercial spaces, Indian bath fittings have become synonymous with style and reliability.</p>
-                </div>
                 <div className="blog__content__child py-6 flex flex-col gap-4">
                     <h2 className="font-semibold text-2xl">A Legacy of Craftsmanship</h2>
                     <p>The roots of India&apos;s ceramic craftsmanship run deep, with traditional artisans mastering the art of pottery and ceramics for centuries. This legacy has been carried forward into modern manufacturing processes, blending heritage with state-of-the-art technology. Indian manufacturers are now producing sanitary ware that meets the highest international standards while retaining a unique charm.</p>
                 </div>
                 <div className="blog__content__child py-6 flex flex-col gap-4">
                     <h2 className="font-semibold text-2xl">Functionality That Meets Global Standards</h2>
-                    <p>Indian ceramic sanitary ware is designed with practicality in mind. With an emphasis on durability, ease of maintenance, and water efficiency, these products are built to cater to the diverse needs of global markets. From washbasins and toilets to urinals and bidets, Indian manufacturers focus on creating products that are not only functional but also eco-friendly and sustainable.</p>
+                    <p>IIndian ceramic sanitary ware is designed with practicality in mind. With an emphasis on durability, ease of maintenance, and water efficiency, these products are built to cater to the diverse needs of global markets. From washbasins and toilets to urinals and bidets, Indian manufacturers focus on creating products that are not only functional but also eco-friendly and sustainable.</p>
                     <p>Advanced technologies such as precision glazing and anti-bacterial finishes ensure that these products are long-lasting and hygienic, meeting the expectations of both residential and commercial users.</p>
                 </div>
                 <div className="blog__content__child py-6 flex flex-col gap-4">
@@ -37,6 +33,16 @@ const Blog2 = ()=>{
                 <div className="blog__content__child py-6 flex flex-col gap-4">
                     <h2 className="font-semibold text-2xl">Sustainability at the core</h2>
                     <p>With growing global concerns about environmental impact, Indian ceramic sanitary ware manufacturers are adopting sustainable practices. From using energy-efficient manufacturing techniques to producing water-saving designs, the industry is taking steps to reduce its carbon footprint while providing eco-conscious solutions.</p>
+                </div>
+                <div className="blog__content__child py-6 flex flex-col gap-4">
+                    <h2 className="font-semibold text-2xl">Why Indian Ceramic Sanitary Ware?</h2>
+                    <ul className="list flex flex-col gap-2 px-2">
+                        <li><span className="font-semibold">Wide Range of Options:</span> &nbsp;From classic to contemporary, Indian sanitary ware caters to diverse styles and preferences.</li>
+                        <li><span className="font-semibold">High-Quality Standards: </span> &nbsp;Rigorous quality checks ensure products meet international benchmarks.</li>
+                        <li><span className="font-semibold">Eco-Friendly Designs: </span> &nbsp;Innovative water-saving features and sustainable manufacturing processes.</li>
+                        <li><span className="font-semibold">Cost-Effective Solutions:  </span> &nbsp;Premium quality at a fraction of the cost compared to global competitors.</li>
+                        <li><span className="font-semibold">Customizability: </span> &nbsp;Products that adapt to the unique needs of various markets.</li>
+                    </ul>
                 </div>
                 <div className="blog__content__child py-6 flex flex-col gap-4">
                     <h2 className="font-semibold text-2xl">A Global Favourite</h2>
