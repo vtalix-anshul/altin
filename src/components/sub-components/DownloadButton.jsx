@@ -10,10 +10,10 @@ const DownloadButton  = ({size, brochure})=>{
         alert("submitted");
     }
 
-    const form__row = `w-full md:pb-8 flex gap-6 flex-col sm:flex-row`;
+    const form__row = `w-full pb-8 flex gap-6 flex-col sm:flex-row`;
     const form__group = `w-full`;
     const form__input = `w-full appearance-none outline-none border-b border-solid border-darkGray min-h-8 bg-transparent`;
-    const input__parent = `w-full`;
+    const input__parent = `w-full mt-1`;
     const form__label = `mb-3`;
     
     const finalBrochure = size? `${brochure} - ${size}` : `${brochure}`;
