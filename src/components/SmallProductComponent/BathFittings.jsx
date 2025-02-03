@@ -19,7 +19,7 @@ import Towel_Rack_112 from "../../assets/images/bath__fitting__images/Towel_Rack
 import Towel_Rail_111 from "../../assets/images/bath__fitting__images/Towel_Rail_111.png"
 import Towel_Ring_110 from "../../assets/images/bath__fitting__images/Towel_Ring_110.png"
 import Tumbler_Holder_114 from "../../assets/images/bath__fitting__images/Tumbler_Holder_114.png"
-import bidit__shower from "../../assets/images/bath__fitting__images/bidit_shower.png"
+import bidit__shower from "../../assets/images/bath__fitting__images/bidet__shower.jpeg"
 import wall__mixer from "../../assets/images/bath__fitting__images/wall__mixer.png"
 import bath__fittings from "../../assets/images/CatalogueImages/BathFittings__mockup.png";
 

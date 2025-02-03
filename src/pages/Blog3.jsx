@@ -25,7 +25,7 @@ const Blog3 = ()=>{
                                 <span className="font-bold">Faucets: </span>&nbsp; From single-lever mixers to wall-mounted designs, there&apos;s a faucets for every need.
                             </div>
                             <div className="py-1 px-4 text-black2">
-                                <span className="font-bold">Showers: </span>&nbsp; FLuxurious rain showers, handheld options, and multi-functional shower.
+                                <span className="font-bold">Showers: </span>&nbsp; Luxurious rain showers, handheld options, and multi-functional shower panels.
                             </div>
                             <div className="py-1 px-4 text-black2">
                                 <span className="font-bold">Accessories: </span>&nbsp; Towel racks, soap dispensers, and robe hooks designed to enhance any bathroom.

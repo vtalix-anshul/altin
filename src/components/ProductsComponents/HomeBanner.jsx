@@ -7,9 +7,7 @@ const HomeBanner = ()=>{
                 <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Diverse collections for <br /> global markets</h1>
             </div>
             <div className="absolute flex justify-center w-full bottom-16">
-                <button className="">
-                    <ScrollDownButton targetId={"products__collection"} />
-                </button>
+                <ScrollDownButton targetId={"products__collection"} />
             </div>
         </div>
     </>);
