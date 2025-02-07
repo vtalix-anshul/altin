@@ -1,6 +1,6 @@
-import home__banner__slide__1 from "../../assets/images/Slider.png";
-import home__banner__slide__2 from "../../assets/images/home__banner__slide__2.png";
-import home__banner__slide__3 from "../../assets/images/home__banner__slide__3.png";
+import home__banner__slide__1 from "../../assets/images/Slider.jpeg";
+import home__banner__slide__2 from "../../assets/images/sanitary__ware__home__page__banner.png";
+import home__banner__slide__3 from "../../assets/images/bath__fittings__home__page__banner.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -26,10 +26,10 @@ const HomeBanner = () => {
       {/* Custom Navigation Buttons */}
       <div className="navigation__button w-full gap-10 absolute bottom-6 z-50 flex justify-end mx-auto pr-24">
         <button className="custom-prev rounded-full">
-          <img src={arrow__img} alt="" className="scale-125 rotate-90 shadow-lg bg-black/20 rounded-full"/>
+          <img src={arrow__img} alt="" className="scale-125 rotate-90 bg-black/20 rounded-full hover:bg-orange hover:border-orange border hover:border-solid"/>
         </button>
         <button className="custom-next rounded-full">
-          <img src={arrow__img} alt="" className="scale-125 -rotate-90 shadow-lg bg-black/20 rounded-full"/>
+          <img src={arrow__img} alt="" className="scale-125 -rotate-90 bg-black/20 rounded-full hover:bg-orange hover:border-orange border hover:border-solid"/>
         </button>
       </div>
 

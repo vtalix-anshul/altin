@@ -14,8 +14,10 @@ import Blog1 from "./pages/Blog1";
 import Blog2 from "./pages/Blog2";
 import Blog3 from "./pages/Blog3";
 
-import whatsapp__image from "./assets/images/whatsapp__fixed.png";
-import scroll__top from "./assets/images/up__arrow.png";
+import whatsapp__image from "./assets/images/Whatsapp.png";
+import scroll__top from "./assets/images/Arrows.png";
+import whatsapp__white from "./assets/images/whatsapp__white.png";
+import scroll__top__white from "./assets/images/arrows__white.png";
 
 function App() {
   // State to manage scroll button visibility
@@ -71,21 +73,41 @@ function App() {
           <a
             target="_blank"
             href="https://wa.me/+918488884599"
-            className="block bg-darkGray rounded-full w-14 h-14"
+            className="group block rounded-full w-14 h-14 relative"
             rel="noreferrer"
           >
-            <img src={whatsapp__image} alt="WhatsApp" className="w-full h-full" />
+            <img
+              src={whatsapp__image}
+              alt="WhatsApp"
+              className="w-full h-full rounded-full bg-white group-hover:hidden"
+            />
+            <img
+              src={whatsapp__white}
+              alt="WhatsApp Hover"
+              className="w-full h-full rounded-full bg-orange hidden group-hover:block"
+            />
           </a>
+
           {/* Scroll to Top Button */}
           {showScrollButton && (
             <button
               onClick={scrollToTop}
-              className="w-14 h-14 bg-darkGray rounded-full block"
+              className="group w-14 h-14 bg-darkGray block rounded-full relative"
             >
-              <img src={scroll__top} alt="Scroll to Top" className="w-full h-full" />
+              <img
+                src={scroll__top}
+                alt="Scroll to Top"
+                className="w-full h-full rounded-full bg-white group-hover:hidden"
+              />
+              <img
+                src={scroll__top__white}
+                alt="Scroll to Top Hover"
+                className="w-full h-full rounded-full bg-orange hidden group-hover:block"
+              />
             </button>
           )}
         </div>
+
       </Router>
     </>
   );
