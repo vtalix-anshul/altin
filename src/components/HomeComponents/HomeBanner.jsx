@@ -22,7 +22,7 @@ const HomeBanner = () => {
   }, []);
 
   return (
-    <div className="h-dvh bg-red-900 -mt-24 relative">
+    <div className="h-dvh bg-red-900 -mt-[100px] relative">
       {/* Custom Navigation Buttons */}
       <div className="navigation__button w-full gap-10 absolute bottom-6 z-50 flex justify-end mx-auto pr-24">
         <button className="custom-prev rounded-full">

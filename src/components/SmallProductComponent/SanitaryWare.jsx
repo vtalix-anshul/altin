@@ -45,7 +45,7 @@ const SanitaryWare = ()=>{
     ];
 
     return(<>
-        <div className="product__small__home__banner__2 h-dvh -mt-24 relative grid items-center">
+        <div className="product__small__home__banner__2 h-dvh -mt-[100px] relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
                 <h4 className="text-2xl">SANITARY WARES</h4>
                 <h1 className="text-5xl lg:text-6xl px-4 md:px-28 lg:px-64 font-semibold mt-3">Diverse collections for <br /> global markets</h1>
@@ -98,9 +98,9 @@ const SanitaryWare = ()=>{
                                 </div>
                             </TabPanel>
                             <TabPanel className="flex gap-16 flex-col">
-                                <div className="card bg-lightGray rounded-3xl px-3 py-5 max-w-[400px] h-full flex flex-col gap-3 justify-center">
-                                    <div className="image__parent w-full  h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
-                                        <img src={urinal} alt={urinal} loading="lazy" className="rounded-3xl object-contain"/>
+                                <div className="card bg-lightGray rounded-3xl px-3 py-5 max-w-[400px] max-h-[420px] h-full flex flex-col gap-3 justify-center">
+                                    <div className="image__parent w-full  max-h-[80%] flex justify-center bg-white p-3 px-5 rounded-3xl">
+                                        <img src={urinal} alt={urinal} loading="lazy" className="rounded-3xl max-h-[250px] object-contain"/>
                                     </div>
                                     <div className="card__content  py-6 px-3 h-[20%]">
                                         <h3 className="text-2xl bottom__line relative w-fit">Urinal</h3>

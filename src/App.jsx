@@ -73,18 +73,18 @@ function App() {
           <a
             target="_blank"
             href="https://wa.me/+918488884599"
-            className="group block rounded-full w-14 h-14 relative"
+            className="group block bg-darkGray shadow-lg transition-all duration-300 rounded-full w-14 h-14 relative"
             rel="noreferrer"
           >
             <img
               src={whatsapp__image}
               alt="WhatsApp"
-              className="w-full h-full rounded-full bg-white group-hover:hidden"
+              className="w-full h-full rounded-full shadow-lg  bg-white group-hover:hidden transition-all duration-300"
             />
             <img
               src={whatsapp__white}
               alt="WhatsApp Hover"
-              className="w-full h-full rounded-full bg-orange hidden group-hover:block"
+              className="w-full h-full rounded-full bg-orange shadow-lg hidden group-hover:block transition-all duration-300"
             />
           </a>
 
@@ -92,17 +92,17 @@ function App() {
           {showScrollButton && (
             <button
               onClick={scrollToTop}
-              className="group w-14 h-14 bg-darkGray block rounded-full relative"
+              className="group w-14 h-14 bg-darkGray block rounded-full shadow-lg relative transition-all duration-300"
             >
               <img
                 src={scroll__top}
                 alt="Scroll to Top"
-                className="w-full h-full rounded-full bg-white group-hover:hidden"
+                className="w-full h-full rounded-full bg-white group-hover:hidden shadow-lg transition-all duration-300"
               />
               <img
                 src={scroll__top__white}
                 alt="Scroll to Top Hover"
-                className="w-full h-full rounded-full bg-orange hidden group-hover:block"
+                className="w-full h-full rounded-full bg-orange hidden group-hover:block shadow-lg transition-all duration-300"
               />
             </button>
           )}

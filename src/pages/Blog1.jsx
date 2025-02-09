@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import altin__exports__panel__1 from "../assets/images/altin__exports__panel__2.png"
+import altin__exports__panel__1 from "../assets/images/blog__1.png";
 
 const Blog1 = ()=>{
     return(<>

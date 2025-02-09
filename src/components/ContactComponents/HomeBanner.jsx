@@ -7,7 +7,7 @@ const HomeBanner = ()=>{
     const input__parent = `w-full`;
     const form__label = `mb-3`;
     return (<>
-        <div className="contact__home__banner h-dvh -mt-24 relative grid items-center">
+        <div className="contact__home__banner h-dvh -mt-[100px] relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
             <h4 className="text-2xl">
                 CONTACT US

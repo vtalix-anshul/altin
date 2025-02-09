@@ -1,4 +1,4 @@
-import altin__exports__panel__1 from "../assets/images/altin__exports__panel__1.png"
+import altin__exports__panel__1 from "../assets/images/blog__2.png"
 
 const Blog2 = ()=>{
     return(<>
