@@ -54,7 +54,7 @@ const ProjectTalk = ()=>{
                 <div className="get__in__touch flex flex-col gap-6 p-3 items-center">
                     <h5 className="w-full md:w-2/3 text-white text-2xl text-center">Let&apos;s create something extraordinary together.
                     Contact us today for expert guidance and innovative solutions!</h5>
-                    <Link to='/contact-us' className="bg-orange text-lg btn w-fit text-white">Get in touch</Link>
+                    <Link to='/contact-us' className="bg-orange text-lg btn w-fit text-white hover:text-black hover:bg-white">Get in touch</Link>
                 </div>
             </div>
         </div>

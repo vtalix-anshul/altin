@@ -1,5 +1,6 @@
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const GetAQuote = ()=>{
     
@@ -11,9 +12,31 @@ const GetAQuote = ()=>{
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleQuoteSubmit = (e)=>{
+    const [loading, setLoading] = useState(false);
+    const handleQuoteSubmit = async (e)=>{
         e.preventDefault();
-        console.log("event done");
+        const formData = new FormData(e.target);
+        try {
+            setLoading(true);
+            const response = await fetch("./api/formHandler.php", {
+                method: "POST",
+                body: formData,
+            });
+
+            if (response.ok) {
+                setLoading(false);
+                toast.success("Message sent successfully!");
+                e.target.reset();
+            } else {
+                setLoading(false);
+                throw new Error("Something went wrong");
+            }
+            setIsOpen(false);
+        } catch (error) {
+            setLoading(false);
+            setIsOpen(false);
+            toast.error("Something went wrong ");
+        }
     }
 
     return (<>
@@ -40,12 +63,21 @@ const GetAQuote = ()=>{
                                 <div className={form__group}>
                                     <label htmlFor="name" className={form__label}>Name</label>
                                     <div className={input__parent}>
+                                        <input type="hidden" name="type" id="type" value={"get_a_quote"} />
                                         <input type="text" id="name" name="name" placeholder="Your name" className={form__input}/>
                                     </div>
                                 </div><div className={form__group}>
                                     <label htmlFor="mobile" className={form__label}>Mobile</label>
                                     <div className={input__parent}>
-                                        <input type="number" id="mobile" name="mobile" placeholder="Your number" className={form__input}/>
+                                    <input 
+                                        type="text" 
+                                        id="mobile" 
+                                        name="mobile" 
+                                        placeholder="Your number" 
+                                        className={form__input} 
+                                        required
+                                        onInput={(e) => e.target.value = e.target.value.replace(/[^0-9+]/g, '')} 
+                                    />
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +118,9 @@ const GetAQuote = ()=>{
                             </div>
                             <div>
                                 <div className={form__group}>
-                                    <button type="submit" className="text-lg bottom__line relative border-b-2 border-black border-solid">Submit</button>
+                                    <button disabled={loading} type="submit" className="text-lg bottom__line relative border-b-2 border-black border-solid">
+                                        {loading? "Processing...": "Submit"}
+                                    </button>
                                 </div>
                             </div>
                         </form>

@@ -18,6 +18,8 @@ import whatsapp__image from "./assets/images/Whatsapp.png";
 import scroll__top from "./assets/images/Arrows.png";
 import whatsapp__white from "./assets/images/whatsapp__white.png";
 import scroll__top__white from "./assets/images/arrows__white.png";
+import { Bounce, toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   // State to manage scroll button visibility
@@ -109,6 +111,19 @@ function App() {
         </div>
 
       </Router>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+      />
     </>
   );
 }

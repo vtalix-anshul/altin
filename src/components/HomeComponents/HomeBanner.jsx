@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
-import arrow__img from "../../assets/images/arrow__down.png";
+import arrow__img from "../../assets/images/arrows__white.png";
 
 const HomeBanner = () => {
   const swiperRef = useRef(null);
@@ -24,12 +24,12 @@ const HomeBanner = () => {
   return (
     <div className="h-dvh bg-red-900 -mt-[100px] relative">
       {/* Custom Navigation Buttons */}
-      <div className="navigation__button w-full gap-10 absolute bottom-6 z-50 flex justify-end mx-auto pr-24">
+      <div className="navigation__button w-full gap-6 absolute bottom-6 z-50 flex justify-end mx-auto pr-24">
         <button className="custom-prev rounded-full">
-          <img src={arrow__img} alt="" className="scale-125 rotate-90 bg-black/20 rounded-full hover:bg-orange hover:border-orange border hover:border-solid"/>
+          <img src={arrow__img} alt="" className="-rotate-90 w-16 h-16 bg-black/20 rounded-full hover:bg-orange hover:border-orange border hover:border-solid"/>
         </button>
         <button className="custom-next rounded-full">
-          <img src={arrow__img} alt="" className="scale-125 -rotate-90 bg-black/20 rounded-full hover:bg-orange hover:border-orange border hover:border-solid"/>
+          <img src={arrow__img} alt="" className="rotate-90 w-16 h-16 bg-black/20 rounded-full hover:bg-orange hover:border-orange border hover:border-solid"/>
         </button>
       </div>
 

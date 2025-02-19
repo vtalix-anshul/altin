@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import newLogo from "../../assets/images/Logo.png";
+import newLogo from "../../assets/images/Logo.svg";
 import GetAQuote from "./GetAQuote";
 
 const NavMenu = () => {
@@ -14,7 +14,7 @@ const NavMenu = () => {
       <div className="flex justify-start lg:flex-1">
         <Link to="/" className="-m-1.5 p-1.5">
           <span className="sr-only">Altin</span>
-          <img src={newLogo} alt="Logo" className="w-auto" />
+          <img src={newLogo} alt="Logo" className="w-auto scale-110" />
         </Link>
       </div>
 

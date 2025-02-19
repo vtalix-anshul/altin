@@ -1,13 +1,35 @@
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react"
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const DownloadButton  = ({size, brochure})=>{
 
+    const [loading, setLoading] = useState(false);
     const [brochureFormOpen, setBrochureForomOpen] = useState(false);
-    const handleBrochureFormSubmit = (e)=>{
+    const handleBrochureFormSubmit = async (e)=>{
         e.preventDefault();
+        const formData = new FormData(e.target);
+        try {
+            setLoading(true);
+            const response = await fetch("./api/formHandler.php", {
+                method: "POST",
+                body: formData,
+            });
 
-        alert("submitted");
+            if (response.ok) {
+                setLoading(false);
+                toast.success("Message sent successfully!");
+                e.target.reset();
+            } else {
+                setLoading(false);
+                throw new Error("Something went wrong");
+            }
+            setBrochureForomOpen(false);
+        } catch (error) {
+            setLoading(false);
+            setBrochureForomOpen(false);
+            toast.error("Something went wrong ");
+        }
     }
 
     const form__row = `w-full pb-8 flex gap-6 flex-col sm:flex-row`;
@@ -36,12 +58,21 @@ const DownloadButton  = ({size, brochure})=>{
                                 <div className={form__group}>
                                     <label htmlFor="name" className={form__label}>Name</label>
                                     <div className={input__parent}>
-                                        <input type="text" id="name" name="name" placeholder="Your name" className={form__input}/>
+                                        <input type="hidden" value="brochure__form" name="type" id="type" />
+                                        <input type="text" id="name" name="name" placeholder="Your name" className={form__input} required />
                                     </div>
                                 </div><div className={form__group}>
                                     <label htmlFor="mobile" className={form__label}>Mobile</label>
                                     <div className={input__parent}>
-                                        <input type="number" id="mobile" name="mobile" placeholder="Your number" className={form__input}/>
+                                    <input 
+                                        type="text" 
+                                        id="mobile" 
+                                        name="mobile" 
+                                        placeholder="Your number" 
+                                        className={form__input} 
+                                        required
+                                        onInput={(e) => e.target.value = e.target.value.replace(/[^0-9+]/g, '')} 
+                                    />
                                     </div>
                                 </div>
                             </div>
@@ -49,12 +80,12 @@ const DownloadButton  = ({size, brochure})=>{
                                 <div className={form__group}>
                                     <label htmlFor="brochure" className={form__label}>Brochure</label>
                                     <div className={input__parent}>
-                                        <input type="text" id="brochure" name="brochure" placeholder="Your brochure" className={form__input} value={finalBrochure} readOnly/>
+                                        <input type="text" id="brochure" name="brochure" placeholder="Your brochure" required className={form__input} value={finalBrochure} readOnly/>
                                     </div>
                                 </div><div className={form__group}>
                                     <label htmlFor="email" className={form__label}>Email</label>
                                     <div className={input__parent}>
-                                        <input type="email" id="email" name="email" placeholder="Your email" className={form__input}/>
+                                        <input type="email" id="email" name="email" placeholder="Your email" className={form__input} required/>
                                     </div>
                                 </div>
                             </div>
@@ -62,13 +93,15 @@ const DownloadButton  = ({size, brochure})=>{
                                 <div className={form__group}>
                                     <label htmlFor="message">Message</label>
                                     <div className={input__parent}>
-                                        <input type="text" name="message" id="message" placeholder="Start Typing your message" className={form__input} />
+                                        <input type="text" name="message" id="message" placeholder="Start Typing your message" className={form__input} required/>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className={form__group}>
-                                    <button type="submit" className="text-lg underline">Submit</button>
+                                    <button type="submit" disabled={loading} className="text-lg bottom__line relative border-b-2 border-black border-solid">
+                                        {loading? "Processing..." : "Submit"}
+                                    </button>
                                 </div>
                             </div>
                         </form>

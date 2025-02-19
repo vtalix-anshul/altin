@@ -16,8 +16,8 @@ const OurValues = ()=>{
                     <div className="first__row flex flex-col md:flex-row w-full flex-wrap gap-5 justify-center items-center lg:items-start">
                         <div className="content__box w-full max-w-[310px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                                <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
-                                    <img src={integrity} alt="icon" />
+                                <div className="rounded-full bg-orange text-white w-20 h-20 grid place-items-center">
+                                    <img src={integrity} alt="icon" className="scale-110"/>
                                 </div>
                             </div>
                             <div className="content__box mt-4">
@@ -27,8 +27,8 @@ const OurValues = ()=>{
                         </div>
                         <div className="content__box w-full max-w-[310px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                            <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
-                                    <img src={reliability} alt="icon" />
+                            <div className="rounded-full bg-orange text-white w-20 h-20 grid place-items-center">
+                                    <img src={reliability} alt="icon" className="scale-110"/>
                                 </div>
                             </div>
                             <div className="content__box mt-4">
@@ -38,8 +38,8 @@ const OurValues = ()=>{
                         </div>
                         <div className="content__box w-full max-w-[340px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                            <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
-                                    <img src={quality} alt="icon" />
+                            <div className="rounded-full bg-orange text-white w-20 h-20 grid place-items-center">
+                                    <img src={quality} alt="icon" className="scale-110"/>
                                 </div>
                             </div>
                             <div className="content__box mt-4">
@@ -49,8 +49,8 @@ const OurValues = ()=>{
                         </div>
                         <div className="content__box w-full max-w-[310px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                            <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
-                                    <img src={commitment} alt="icon" />
+                            <div className="rounded-full bg-orange text-white w-20 h-20 grid place-items-center">
+                                    <img src={commitment} alt="icon" className="scale-110"/>
                                 </div>
                             </div>
                             <div className="content__box mt-4">
@@ -60,8 +60,8 @@ const OurValues = ()=>{
                         </div>
                         <div className="content__box w-full max-w-[310px] py-12 px-7 lg:px-14 flex flex-col justify-center text-center">
                             <div className="button__number flex justify-center">
-                            <div className="rounded-full bg-orange text-white w-[48px] h-[48px] grid place-items-center">
-                                    <img src={customer__centric} alt="icon" />
+                            <div className="rounded-full bg-orange text-white w-20 h-20 grid place-items-center">
+                                    <img src={customer__centric} alt="icon" className="scale-110"/>
                                 </div>
                             </div>
                             <div className="content__box mt-4">

@@ -58,7 +58,7 @@ const Collections = ()=>{
                                     <div className="buttons__row flex flex-wrap gap-2 mt-2">
                                         <button className="bg-transparent btn border border-solid border-darkGray hover:border-orange">Pan</button>
                                         <button className="bg-transparent btn border border-solid border-darkGray hover:border-orange">Urinal</button>
-                                        <button className="bg-transparent btn border border-solid border-darkGray hover:border-orange">Wash Bain</button>
+                                        <button className="bg-transparent btn border border-solid border-darkGray hover:border-orange">Wash Basin</button>
                                     </div>
                                 </div>
                             </div>

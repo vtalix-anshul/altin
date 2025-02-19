@@ -1,4 +1,6 @@
+import { toast } from "react-toastify";
 import ScrollDownButton from "../ScrollDownButton";
+import { useState } from "react";
 
 const HomeBanner = ()=>{
     const form__row = `w-full pb-8 flex gap-6 flex-col sm:flex-row`;
@@ -6,6 +8,35 @@ const HomeBanner = ()=>{
     const form__input = `w-full appearance-none outline-none border-b border-solid border-darkGray min-h-8 bg-transparent`;
     const input__parent = `w-full`;
     const form__label = `mb-3`;
+
+    const [loading, setLoading] = useState(false);
+
+    const handleContactSubmit = async (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(e.target);
+        
+        try {
+            setLoading(true);
+            const response = await fetch("./api/formHandler.php", {
+                method: "POST",
+                body: formData,
+            });
+
+            if (response.ok) {
+                setLoading(false);
+                toast.success("Message sent successfully!");
+                e.target.reset();
+            } else {
+                setLoading(false);
+                throw new Error("Something went wrong");
+            }
+        } catch (error) {
+            setLoading(false);
+            toast.error("Something went wrong ");
+        }
+    };
+
     return (<>
         <div className="contact__home__banner h-dvh -mt-[100px] relative grid items-center">
             <div className="about__banner__content relative text-white text-center">
@@ -42,10 +73,11 @@ const HomeBanner = ()=>{
                         </div>
                     </div>
                     <div className="contact__form py-2 px-4 md:px-9 xl:px-14">
-                        <div className="main__contact__form">
+                        <form onSubmit={(e)=>handleContactSubmit(e)} className="main__contact__form">
                             <div className="form__heading"><h2 className="mb-6">Say Hello :)</h2></div>
                             <div className={form__row}>
                                 <div className={form__group}>
+                                    <input type="hidden" value="contact__form" name="type" id="type"/>
                                     <label htmlFor="name" className={form__label}>Name</label>
                                     <div className={input__parent}>
                                         <input type="text" id="name" name="name" placeholder="Your name" className={form__input} required/>
@@ -53,7 +85,15 @@ const HomeBanner = ()=>{
                                 </div><div className={form__group}>
                                     <label htmlFor="mobile" className={form__label}>Mobile</label>
                                     <div className={input__parent}>
-                                        <input type="number" id="mobile" name="mobile" placeholder="Your number" className={form__input} required/>
+                                    <input 
+                                        type="text" 
+                                        id="mobile" 
+                                        name="mobile" 
+                                        placeholder="Your number" 
+                                        className={form__input} 
+                                        required
+                                        onInput={(e) => e.target.value = e.target.value.replace(/[^0-9+]/g, '')} 
+                                    />
                                     </div>
                                 </div>
                             </div>
@@ -80,10 +120,12 @@ const HomeBanner = ()=>{
                             </div>
                             <div>
                                 <div className={form__group}>
-                                    <button type="submit" className="text-lg bottom__line relative border-b-2 border-black border-solid">Submit</button>
+                                    <button type="submit" disabled={loading} className="text-lg bottom__line relative border-b-2 border-black border-solid">
+                                        {loading? "Processing...": "Submit"}
+                                    </button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
