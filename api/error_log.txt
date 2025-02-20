@@ -1,0 +1,6 @@
+[19-Feb-2025 18:38:06 UTC] Error logging enabled. Script started.
+[19-Feb-2025 18:38:06 UTC] Response: {"status":"success","message":"Form data received","data":{"type":"brochure__form","name":"Anshul","mobile":"+917417675813","company":"","email":"kumar.anshul9809@gmail.com","message":"this is the random messge","country":"","product":"","description":"","brochure":"Sanitary Ware Catalogue"}}
+[19-Feb-2025 18:43:44 UTC] Error logging enabled. Script started.
+[19-Feb-2025 18:43:44 UTC] Response: {"status":"success","message":"Form data received","data":{"type":"brochure__form","name":"Anshul","mobile":"1234567890","company":"","email":"kumar.anshul@gmail.com","message":"this is the second message","country":"","product":"","description":"","brochure":"Sanitary Ware Catalogue"}}
+[19-Feb-2025 18:51:29 UTC] Error logging enabled. Script started.
+[19-Feb-2025 18:51:29 UTC] Response: {"status":"success","message":"Form data received","data":{"type":"brochure__form","name":"Anshu","mobile":"1234567890","company":"","email":"kumar.anshul@gmail.com","message":"check for the 600 1200 catalogue","country":"","product":"","description":"","brochure":"Carving - 600x1200 MM"}}

@@ -14,7 +14,6 @@ const Header = () => {
     window.scrollTo(0,0);
   }, [location]);
   
-
   // Function to check if the current path is active
 
   return (

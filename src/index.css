@@ -48,3 +48,7 @@ body{
     -o-border-radius: 100px;
     cursor: pointer;
 }
+
+.goog-te-gadget-simple{
+    background-color: red !important;
+}
