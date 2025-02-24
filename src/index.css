@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    position: relative;
+}
+
 @font-face {
     font-family: 'artox';
     src:url('./fonts/ArtoxGeodesic-Regular.woff2') format('woff'), 
@@ -31,6 +35,7 @@
 body{
     font-family: "artox", sans-serif;
 }
+
 .container{
     max-width: 1440px;
     margin: 0 auto;
@@ -49,6 +54,18 @@ body{
     cursor: pointer;
 }
 
-.goog-te-gadget-simple{
-    background-color: red !important;
+#google_translate_element > .skiptranslate > *:nth-child(n+2) {
+  display: none;
+}
+
+.goog-te-combo{
+  font-size: 14px;
+  width: 150px;
+  padding: 10px;
+  padding-right: 5px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }

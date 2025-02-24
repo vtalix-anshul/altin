@@ -9,16 +9,14 @@ const Footer = ()=>{
     const handleSubscriptionSubmit = async (e)=>{
         e.preventDefault();
         const formData = new FormData(e.target);
-        console.log("sending the from data as ", formData);
         try {
             setLoading(true);
             const response = await fetch("./api/subscriptions.php", {
                 method: "POST",
                 body: formData,
             });
-
+            const data = await response.json();
             if (response.ok) {
-                const data = await response.json();
                 toast.success(data.message || "Subscription successful!");
                 setLoading(false);
                 e.target.reset();
@@ -28,7 +26,7 @@ const Footer = ()=>{
             }
         } catch (error) {
             setLoading(false);
-            toast.error("Something went wrong ");
+            toast.error(error.message || "Something went wrong ");
         }
     }
 

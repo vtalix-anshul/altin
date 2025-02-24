@@ -15,10 +15,11 @@ const DownloadButton  = ({size, brochure})=>{
                 method: "POST",
                 body: formData,
             });
+            const data = await response.json();
 
             if (response.ok) {
                 setLoading(false);
-                toast.success("Message sent successfully!");
+                toast.success(data?.message || "Message sent successfully!");
                 e.target.reset();
             } else {
                 setLoading(false);
