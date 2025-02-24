@@ -71,15 +71,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send email
     $mail = new PHPMailer(true);
     try {
+        // $mail->isSMTP();
+        // $mail->Host = 'smtp.zoho.com';
+        // $mail->SMTPAuth = true;
+        // $mail->Username = 'aniket@altinexports.com'; // Your Gmail
+        // $mail->Password = 'YRz8gz9PR3AP'; // Use App Password
+        // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        // $mail->Port = 587;
+        
+        // $mail->setFrom('aniket@altinexports.com', 'Altin Exports');
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'maltanu332@gmail.com'; // Your Gmail
-        $mail->Password = 'nzjkegmrrnwjisue'; // Use App Password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Username = 'no.reply.altinexports@gmail.com'; 
+        $mail->Password = 'dgixlrcwlmiciiwe'; // App Password, NOT your Zoho login password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use ENCRYPTION_SMTPS for port 465
         $mail->Port = 587;
-        
-        $mail->setFrom('maltanu332@gmail.com', 'Altin Exports');
+        $mail->setFrom('no.reply.altinexports@gmail.com', 'Altin Exports');
+
         $mail->addAddress('info@altinexports.com'); // Admin email
         $mail->addReplyTo($email, $name);
         
@@ -119,7 +128,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Body .= "<p><strong>Brochure:</strong> $brochure</p>";
         }
 
-        
+        $mail->SMTPDebug = 2;
+        $mail->Debugoutput = 'error_log';
+
         $mail->send();
         echo json_encode(["status" => "success", "message" => "Form submitted successfully!"]);
     } catch (Exception $e) {

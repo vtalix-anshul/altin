@@ -63,12 +63,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'maltanu332@gmail.com'; // Your Gmail
-            $mail->Password = 'nzjkegmrrnwjisue'; // Use App Password
+            $mail->Username = 'no.reply.altinexports@gmail.com'; // Your Gmail
+            $mail->Password = 'dgixlrcwlmiciiwe'; // Use App Password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            $mail->setFrom('maltanu332@gmail.com', 'Altin Exports');
+            $mail->setFrom('no.reply.altinexports@gmail.com', 'Altin Exports');
             $mail->addAddress($email); // Send confirmation to the user
 
             $mail->isHTML(true);
