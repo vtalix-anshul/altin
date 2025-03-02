@@ -59,16 +59,24 @@ const HomeBanner = ()=>{
             <div className="px-4 py-24 lg:py-44 lg:px-16 container grid grid-cols-1 gap-16 items-center">
                 <div className="grid grid-cols-1 md:grid-cols-[50%_50%] lg:grid-cols-[40%_60%] gap-6 md:gap-3">
                     <div className="contact__heading px-4 h-full flex flex-col justify-between">
-                        <div className="contact__heading__child flex flex-col gap-3">
+                        <div className="contact__heading__child flex flex-col gap-3 mb-6">
                             <h3 className="text-3xl lg:text-5xl font-semibold">Let&apos;s work together</h3>
                             <a href="mailto:info@altinexports.com" className="text-orange w-fit">info@altinexports.com</a>
+                            <a href="tel:+918488884599" target="_blank">+91 8488884599</a>
                         </div>
                         <div className="aline__info flex flex-col justify-between gap-6">
-                            <a href="tel:+918488884599" target="_blank">+91 8488884599</a>
                             <div className="contact__info">
+                                <h2 className="text-xl mb-2">Corporate Address:</h2>
                                 <p>503, Asopalav Avenue,</p>
                                 <p>Nana Mava Main Road,</p>
                                 <p>Rajkot - 360005 (Guj.), India</p>
+                            </div>
+                            <div className="contact__info">
+                                <h2 className="text-xl mb-2">Factory Address:</h2>
+                                <p>Altin Tiles & Bathware,</p>
+                                <p>Matel Road,</p>
+                                <p>8 - A National Highway,</p>
+                                <p>Morbi - 363621 (Guj.), India</p>
                             </div>
                         </div>
                     </div>
